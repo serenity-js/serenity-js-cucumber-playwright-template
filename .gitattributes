@@ -1,0 +1,49 @@
+# See the below articles for more details:
+# - https://help.github.com/articles/dealing-with-line-endings/#platform-all
+# - https://stackoverflow.com/questions/9976986/force-lf-eol-in-git-repo-and-working-copy
+
+# Autodetect text files
+* text=auto
+
+# ... unless the name matches the following overriding patterns:
+
+# Text files:
+.editorconfig   text eol=lf
+.env            text eol=lf
+.gitattributes  text eol=lf
+.gitignore      text eol=lf
+.npmrc          text eol=lf
+Dockerfile      text eol=lf
+*.css           text eol=lf
+*.hcl           text eol=lf
+*.html          text eol=lf
+*.gradle        text eol=lf
+gradlew         text eol=lf
+*.java          text eol=lf
+*.js            text eol=lf
+*.json          text eol=lf
+*.md            text eol=lf
+*.properties    text eol=lf
+*.scss          text eol=lf
+*.sh            text eol=lf
+*.svg           text eol=lf
+*.tf            text eol=lf
+*.tfvars        text eol=lf
+*.ts            text eol=lf
+*.txt           text eol=lf
+*.xml           text eol=lf
+*.yml           text eol=lf
+
+# Windows-specific files:
+*.bat           text eol=crlf
+
+# Binary files:
+*.data          binary
+*.eot           binary
+*.ico           binary
+*.jar           binary
+*.jpg           binary
+*.png           binary
+*.ttf           binary
+*.woff          binary
+*.woff2         binary

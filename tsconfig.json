@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "target": "es2019",
+    "lib": ["es2019", "dom"],
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "sourceMap": true,
+    "declaration": true,
+    "types": [
+      "node",
+      "webdriverio/async"
+    ]
+  },
+
+  "include": [
+    "features/**/*.ts",
+    "test/**/*.ts"
+  ],
+
+  "exclude": [
+    "node_modules"
+  ]
+}

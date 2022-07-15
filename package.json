@@ -1,0 +1,60 @@
+{
+  "name": "serenity-js-cucumber-playwright-template",
+  "version": "3.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "serenity-bdd update",
+    "clean": "rimraf target",
+    "test": "failsafe clean test:execute test:report",
+    "test:execute": "cucumber-js",
+    "test:report": "serenity-bdd run --features ./features",
+    "lint": "eslint --ext ts --config .eslintrc.js .",
+    "lint:fix": "npm run lint -- --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/serenity-js/serenity-js-cucumber-webdriverio-template.git"
+  },
+  "keywords": [
+    "serenity-js",
+    "bdd",
+    "cucumber",
+    "testing",
+    "webdriverio"
+  ],
+  "author": "Jan Molak <jan.molak@smartcodeltd.co.uk>",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/serenity-js/serenity-js-cucumber-webdriverio-template/issues"
+  },
+  "homepage": "https://serenity-js.org",
+  "engines": {
+    "node": "^14 || ^16",
+    "npm": "^6 || ^7 || ^8"
+  },
+  "devDependencies": {
+    "@cucumber/cucumber": "^7.3.2",
+    "@serenity-js/assertions": "^3.0.0-rc",
+    "@serenity-js/console-reporter": "^3.0.0-rc",
+    "@serenity-js/core": "^3.0.0-rc",
+    "@serenity-js/cucumber": "^3.0.0-rc",
+    "@serenity-js/playwright": "^3.0.0-rc",
+    "@serenity-js/rest": "^3.0.0-rc",
+    "@serenity-js/serenity-bdd": "^3.0.0-rc",
+    "@serenity-js/web": "^3.0.0-rc",
+    "@typescript-eslint/eslint-plugin": "^5.22.0",
+    "@typescript-eslint/parser": "^5.22.0",
+    "eslint": "^8.14.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-simple-import-sort": "^7.0.0",
+    "eslint-plugin-unicorn": "^42.0.0",
+    "eslint-plugin-unused-imports": "^2.0.0",
+    "is-ci": "^3.0.1",
+    "npm-failsafe": "^0.4.3",
+    "playwright": "^1.23.3",
+    "rimraf": "^3.0.2",
+    "ts-node": "^10.7.0",
+    "typescript": "^4.6.4"
+  }
+}
