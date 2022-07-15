@@ -2,7 +2,7 @@ import { AfterAll, BeforeAll, setDefaultTimeout } from '@cucumber/cucumber';
 import { ConsoleReporter } from '@serenity-js/console-reporter';
 import { ArtifactArchiver, configure, Duration } from '@serenity-js/core';
 import { SerenityBDDReporter } from '@serenity-js/serenity-bdd';
-import { Photographer, TakePhotosOfFailures, TakePhotosOfInteractions } from '@serenity-js/web';
+import { Photographer, TakePhotosOfInteractions /* TakePhotosOfFailures */ } from '@serenity-js/web';
 
 import * as playwright from 'playwright';
 
