@@ -45,7 +45,7 @@
     "@serenity-js/web": "^3.0.0-rc.24",
     "@typescript-eslint/eslint-plugin": "^5.33.0",
     "@typescript-eslint/parser": "^5.33.0",
-    "eslint": "^8.21.0",
+    "eslint": "^8.22.0",
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-simple-import-sort": "^7.0.0",
     "eslint-plugin-unicorn": "^43.0.2",
