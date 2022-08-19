@@ -12,13 +12,23 @@ tasks:
     init: gp sync-await setup-node
     command: |
       npm test
-      cd target/site/serenity
-      http-server -p 8000 &
-      cd ../../../
+      gp sync-done test
+
+  - name: 'Serve reports'
+    init: |
+      gp sync-await setup-node
+      gp sync-done test
+    command: |
+      http-server target/site/serenity -p 8000
 
   - name: 'Welcome'
-    init: gp sync-await setup-node
-    command: echo "Setup Node finished"
+    init:
+      echo "Setting up Node.js..."
+      gp sync-await setup-node
+      echo "Running tests..."
+      gp sync-await test
+      echo "All done!"
+    command: gp url 8000
 
 ports:
   - port: 8000
