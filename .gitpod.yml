@@ -4,3 +4,4 @@ tasks:
       nvm install
       sudo npx playwright install-deps
       npm ci
+      npx playwright install
