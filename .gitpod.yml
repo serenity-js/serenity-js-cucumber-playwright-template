@@ -1,14 +1,12 @@
+image:
+  file: .gitpod/gitpod.Dockerfile
+
 tasks:
   - name: 'Install dependencies'
     init: |
-      sudo apt-get install dialog
       nvm install
       npm ci
-      npx --yes playwright install-deps >> playwright-install-deps.out
-      npx --yes playwright install >> playwright-install.out
-      gp sync-done install-deps
     command: npx playwright --version
 
   - name: 'Welcome'
-    init:  gp sync-await install-deps
     command: echo "hello"
