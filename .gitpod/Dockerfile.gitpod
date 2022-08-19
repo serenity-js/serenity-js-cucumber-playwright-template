@@ -1,1 +1,3 @@
 FROM gitpod/workspace-full
+
+RUN sudo npx playwright install-deps

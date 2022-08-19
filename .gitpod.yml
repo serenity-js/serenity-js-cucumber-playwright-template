@@ -6,3 +6,4 @@ tasks:
     init: |
       nvm install
       npm ci
+      npx playwright install 
