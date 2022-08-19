@@ -6,3 +6,7 @@ tasks:
       npm ci
       npx --yes playwright install-deps
       npx --yes playwright install
+      gp sync-done installation
+
+  - name: Welcome Bash
+    init: gp sync-await installation
