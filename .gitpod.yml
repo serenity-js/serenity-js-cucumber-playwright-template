@@ -11,6 +11,7 @@ tasks:
   - name: 'Test'
     init: gp sync-await setup-node
     command: |
+      npm test
       cd target/site/serenity
       http-server -p 8000 &
       cd ../../../
