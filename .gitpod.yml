@@ -6,7 +6,7 @@ tasks:
     before: |
       nvm install
       npm ci
-      gp sync-done setup-node
+  - init: gp sync-done setup-node
 
   - name: 'Test'
     init: gp sync-await setup-node
@@ -15,9 +15,7 @@ tasks:
       gp sync-done test
 
   - name: 'Serve reports'
-    init: |
-      gp sync-await setup-node
-      gp sync-done test
+    init: gp sync-done test
     command: |
       http-server target/site/serenity -p 8000
 
@@ -28,7 +26,9 @@ tasks:
       echo "Running tests..."
       gp sync-await test
       echo "All done!"
-    command: gp url 8000
+    command: |
+      echo "Check out Serenity BDD test report at"
+      gp url 8000
 
 ports:
   - port: 8000
