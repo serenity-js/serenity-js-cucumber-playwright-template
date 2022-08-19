@@ -1,6 +1,3 @@
-image:
-  file: .gitpod/gitpod.Dockerfile
-
 tasks:
   - name: 'Install dependencies'
     before: |
@@ -8,10 +5,10 @@ tasks:
       npm ci
       npx --yes playwright install --with-deps
       gp sync-done installation
-    init: |
-      npm test
-    command: npx playwright --version
 
   - name: 'Welcome'
-    init: gp sync-await installation
-    command: echo "hello"
+    init: | 
+      echo "Getting the environment ready..."
+      gp sync-await installation
+    command: |
+      echo "Run 'npm test' to get started"
