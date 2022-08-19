@@ -1,7 +1,13 @@
 tasks:
-  - name: 'Set up dependencies'
+  - name: 'Set up os-level dependencies'
     init: |
       sudo apt-get install dialog
+
+  - name: 'Set up Node'
+    init: |
       nvm install
-      npm ci
-      npx playwright install --with-deps 
+      npm ci 
+
+  - name: 'Install Playwright'
+    init: |
+      npx playwright install --with-deps
