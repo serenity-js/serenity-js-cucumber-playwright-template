@@ -2,7 +2,7 @@ tasks:
   - name: 'Set up dependencies'
     init: |
       nvm install
-      sudo npx playwright install-deps
       npm ci
+      npx playwright install-deps
       npx playwright install
       echo "done!"
