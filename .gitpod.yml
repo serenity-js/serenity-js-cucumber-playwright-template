@@ -1,0 +1,3 @@
+tasks:
+  - init: nvm install
+    command: npm ci
