@@ -6,7 +6,6 @@ tasks:
     before: |
       nvm install
       npm ci
-#      npx --yes playwright install --with-deps
       gp sync-done setup-node
 #    init: |
 #      npx --yes playwright install --with-deps
