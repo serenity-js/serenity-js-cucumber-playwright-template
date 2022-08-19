@@ -6,7 +6,7 @@ tasks:
     before: |
       nvm install
       npm ci
-  - init: gp sync-done setup-node
+    init: gp sync-done setup-node
 
   - name: 'Test'
     init: gp sync-await setup-node
