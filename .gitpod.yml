@@ -21,9 +21,11 @@ tasks:
 
   - name: 'Welcome'
     command: |
+      echo "Installing dependencies..."
+      gp sync-await installation
       echo "Running tests..."
       gp sync-await test
-      echo "Check out Serenity BDD test report at"
+      echo "All done, check out Serenity BDD test report at"
       gp url 8000
 
 ports:
