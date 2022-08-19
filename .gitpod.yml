@@ -3,11 +3,13 @@ image:
 
 tasks:
   - name: 'Install dependencies'
-    init: |
+    before: |
       nvm install
       npm ci
       npx --yes playwright install --with-deps
       gp sync-done installation
+    init: |
+      npm test
     command: npx playwright --version
 
   - name: 'Welcome'
