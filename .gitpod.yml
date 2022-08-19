@@ -1,6 +1,7 @@
 tasks:
   - name: 'Set up dependencies'
     init: |
+      sudo apt-get install dialog
       nvm install
       npm ci
       npx playwright install --with-deps 
