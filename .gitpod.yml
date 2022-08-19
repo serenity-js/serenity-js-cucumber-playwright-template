@@ -8,15 +8,14 @@ tasks:
     init: gp sync-done setup-node
 
   - name: 'Test'
+    init: gp sync-await setup-node
     command: |
-      gp sync-await setup-node &&
       npm test &&
       gp sync-done test
 
   - name: 'Serve reports'
-    command: |
-      gp sync-done test &&
-      http-server target/site/serenity -p 8000
+    init: gp sync-await test
+    command: http-server target/site/serenity -p 8000
 
   - name: 'Welcome'
     command: |
