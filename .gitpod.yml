@@ -6,7 +6,7 @@ tasks:
     init: |
       nvm install
       npm ci
-      npx --yes install playwright install --with-deps >> playwright.out
+      npx --yes install playwright install --with-deps
       gp sync-done installation
     command: npx playwright --version
 
