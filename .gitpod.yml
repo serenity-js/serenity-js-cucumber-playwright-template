@@ -5,3 +5,4 @@ tasks:
       sudo npx playwright install-deps
       npm ci
       npx playwright install
+      echo "done!"
