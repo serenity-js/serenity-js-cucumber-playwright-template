@@ -7,10 +7,19 @@ tasks:
       nvm install
       npm ci
       gp sync-done setup-node
-#    init: |
-#      npx --yes playwright install --with-deps
-#    command: npx playwright --version
+
+  - name: 'Test'
+    init: gp sync-await setup-node
+    command: |
+      cd target/site/serenity
+      http-server -p 8000 &
+      cd ../../../
 
   - name: 'Welcome'
     init: gp sync-await setup-node
     command: echo "Setup Node finished"
+
+ports:
+  - port: 8000
+    onOpen: notify
+    visibility: public
