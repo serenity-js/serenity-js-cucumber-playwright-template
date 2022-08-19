@@ -3,8 +3,7 @@ tasks:
     before: |
       nvm install
       npm ci
-      npx --yes playwright install --with-deps
-      gp sync-done installation
+      npx --yes playwright install --with-deps && gp sync-done installation
 
   - name: 'Welcome'
     init: | 
