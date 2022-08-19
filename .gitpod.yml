@@ -4,26 +4,27 @@ image:
 tasks:
   - name: 'Setup Node'
     before: |
-      nvm install && 
-      npm ci && 
-      gp sync-done setup-node
+      nvm install && npm ci
+    init: gp sync-done setup-node
 
   - name: 'Test'
-    init: gp sync-await setup-node
-    command: npm test && gp sync-done test
+    command: |
+      gp sync-await setup-node &&
+      npm test &&
+      gp sync-done test
 
   - name: 'Serve reports'
-    init: gp sync-done test
-    command: http-server target/site/serenity -p 8000
+    command: |
+      gp sync-done test &&
+      http-server target/site/serenity -p 8000
 
   - name: 'Welcome'
-    init:
+    command: |
       echo "Setting up Node.js..."
       gp sync-await setup-node
       echo "Running tests..."
       gp sync-await test
       echo "All done!"
-    command: |
       echo "Check out Serenity BDD test report at"
       gp url 8000
 
