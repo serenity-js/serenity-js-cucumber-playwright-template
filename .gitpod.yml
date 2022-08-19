@@ -4,8 +4,9 @@ image:
 tasks:
   - name: 'Setup Node'
     before: |
-      nvm install && npm ci
-    init: gp sync-done setup-node
+      nvm install && 
+      npm ci && 
+      gp sync-done setup-node
 
   - name: 'Test'
     init: gp sync-await setup-node
