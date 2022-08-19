@@ -10,4 +10,4 @@ tasks:
 
   - name: 'Install Playwright'
     init: |
-      npx playwright install --with-deps --yes
+      npx --yes playwright install --with-deps
