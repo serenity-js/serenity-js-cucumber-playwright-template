@@ -6,6 +6,7 @@ tasks:
     init: |
       nvm install 
       npm ci
+      npx playwright install
       gp sync-done installation
 
   - name: 'Test'
