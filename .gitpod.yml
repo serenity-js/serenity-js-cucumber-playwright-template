@@ -17,7 +17,6 @@ tasks:
     # Starting HTTP server in the background, so it doesn't block pre-builds
     before: >
       mkdir -p target/site/serenity &&
-      cp .gitpod/index.html target/site/serenity &&
       (http-server target/site/serenity -p 8000 &)
 
   - name: 'Welcome'
@@ -26,3 +25,10 @@ tasks:
       echo "To run tests: npm test"
       echo "Check out the reports at"
       gp url 8000
+
+vscode:
+  extensions:
+    - EditorConfig.EditorConfig
+    - dbaeumer.vscode-eslint
+    - eamodio.gitlens
+    - cucumberautocomplete
