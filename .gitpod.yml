@@ -6,27 +6,18 @@ tasks:
     init: |
       nvm install 
       npm ci
-      npx playwright install
-      gp sync-done installation
-
-  - name: 'Test'
-    init: gp sync-await installation
-    command: |
-      npm test
-      gp sync-done test
+      npx --yes playwright install
 
   - name: 'Serve reports'
-    command: |
-      gp sync-await test
+    init: |
+      mkdir -p target/site/serenity
+      cp .gitpod/index.html target/site/serenity
       http-server target/site/serenity -p 8000
 
   - name: 'Welcome'
     command: |
-      echo "Installing dependencies..."
-      gp sync-await installation
-      echo "Running tests..."
-      gp sync-await test
-      echo "All done, check out Serenity BDD test report at"
+      echo "To run tests: npm test"
+      echo "Check out the reports at"
       gp url 8000
 
 ports:
