@@ -23,8 +23,8 @@ RUN mkdir ${PLAYWRIGHT_BROWSERS_PATH} && \
     cd ${PLAYWRIGHT_BROWSERS_PATH}-agent && npm init -y && \
     npm i playwright@latest && \
     npx playwright mark-docker-image "${DOCKER_IMAGE_NAME_TEMPLATE}" && \
-    npx playwright install --with-deps && rm -rf /var/lib/apt/lists/* && \
+    npx --yes playwright install --with-deps && rm -rf /var/lib/apt/lists/* && \
     rm -rf ${PLAYWRIGHT_BROWSERS_PATH}-agent && \
     chmod -R 777 ${PLAYWRIGHT_BROWSERS_PATH}
 
-RUN bash -c "npm i -g http-server && npx --yes playwright install --with-deps"
+RUN bash -c "npm i -g http-server"
