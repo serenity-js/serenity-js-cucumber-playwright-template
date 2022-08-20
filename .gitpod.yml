@@ -13,6 +13,7 @@ tasks:
 
   - name: 'Install VSCode Extensions'
     command: |
+        sleep 10
         code --install-extension /vscode-extensions/cucumber-official.vsix
 
   - name: 'Serve reports'
