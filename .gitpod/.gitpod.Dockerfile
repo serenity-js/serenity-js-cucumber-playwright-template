@@ -80,13 +80,12 @@ RUN sudo bash -c "mkdir -p /vscode-extensions \
 # Build Cucumber Quick extension for VSCode
 #   https://github.com/cucumber/vscode
 
-RUN bash -c "curl -Ls https://github.com/abhinaba-ghosh/cucumber-quick/archive/refs/heads/master.zip -o /vscode-extensions/cucumber-quick-master.zip \
-    && unzip /vscode-extensions/cucumber-quick-master.zip -d /vscode-extensions \
-    && cd /vscode-extensions/cucumber-quick-master/ \
-    && npm ci \
-    && npx --yes vsce package --allow-missing-repository \
-    && mv cucumberquick*.vsix ../cucumber-quick.vsix \
-    && cd .. \
-    && rm -rf cucumber-quick-master* \
-    && chmod 777 cucumber-quick.vsix"
-
+#RUN bash -c "curl -Ls https://github.com/abhinaba-ghosh/cucumber-quick/archive/refs/heads/master.zip -o /vscode-extensions/cucumber-quick-master.zip \
+#    && unzip /vscode-extensions/cucumber-quick-master.zip -d /vscode-extensions \
+#    && cd /vscode-extensions/cucumber-quick-master/ \
+#    && npm ci \
+#    && npx --yes vsce package --allow-missing-repository \
+#    && mv cucumberquick*.vsix ../cucumber-quick.vsix \
+#    && cd .. \
+#    && rm -rf cucumber-quick-master* \
+#    && chmod 777 cucumber-quick.vsix"

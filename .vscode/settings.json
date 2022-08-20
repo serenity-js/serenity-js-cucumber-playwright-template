@@ -12,9 +12,5 @@
   "cucumber.parameterTypes": [
     { "name": "actor", "regexp": "[A-Z][a-z]+" },
     { "name": "pronoun", "regexp": "he|she|they|his|her|their" }
-  ],
-  "cucumber-quick": {
-    "tool": "cucumberjs",
-    "script": "npx cucumber-js"
-  }
+  ]
 }
