@@ -73,5 +73,5 @@ RUN curl -fsSL "https://get.sdkman.io" | bash \
 # Download Cucumber extension for VSCode - https://github.com/cucumber/vscode
 
 RUN sudo bash -c "mkdir -p /vscode-extensions \
-    && curl -s $(curl -s https://api.github.com/repos/cucumber/vscode/releases/latest | jq -c '.assets[] | select(.name | test("^cucumber-official.*.vsix$")) | .browser_download_url') -o /vscode-extensions/cucumber-official.vsix \
+    && curl -Ls $(curl -Ls https://api.github.com/repos/cucumber/vscode/releases/latest | jq -c '.assets[] | select(.name | test("^cucumber-official.*.vsix$")) | .browser_download_url') -o /vscode-extensions/cucumber-official.vsix \
     && chmod -R 777 /vscode-extensions"
