@@ -1,5 +1,6 @@
 {
   "files.autoSave": "onFocusChange",
+  "workbench.startupEditor": "readme",
   "gitlens.showWelcomeOnInstall": false,
   "gitlens.showWhatsNewAfterUpgrades": false,
   "cucumberautocomplete.steps": [
