@@ -10,7 +10,6 @@ tasks:
   - name: 'Install'
     init: >
       npm ci &&
-      npx --yes playwright install &&
       gp sync-done npm-ci
 
   - name: 'Serve reports'

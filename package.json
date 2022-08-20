@@ -4,13 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "postinstall": "serenity-bdd update",
+    "postinstall": "npm run serenity-bdd:install && npm run playwright:install",
     "clean": "rimraf target",
     "test": "failsafe clean test:execute test:report",
     "test:execute": "cucumber-js",
     "test:report": "serenity-bdd run --features ./features",
     "lint": "eslint --ext ts --config .eslintrc.js .",
-    "lint:fix": "npm run lint -- --fix"
+    "lint:fix": "npm run lint -- --fix",
+    "serenity-bdd:install": "serenity-bdd update",
+    "playwright:install": "playwright install"
   },
   "repository": {
     "type": "git",
