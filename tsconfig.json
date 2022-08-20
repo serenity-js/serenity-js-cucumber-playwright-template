@@ -9,8 +9,7 @@
     "sourceMap": true,
     "declaration": true,
     "types": [
-      "node",
-      "webdriverio/async"
+      "node"
     ]
   },
 
