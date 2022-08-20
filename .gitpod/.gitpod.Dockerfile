@@ -11,7 +11,6 @@ ENV SHELL=/bin/bash
 ENV PLAYWRIGHT_BROWSERS_PATH=/ms-playwright
 ARG DOCKER_IMAGE_NAME_TEMPLATE="mcr.microsoft.com/playwright:v%version%-focal"
 
-
 # Playwright has a peculiar installation procedure,
 # where it fails silently if you try to install it on GitPod
 # as it assumes it's being installed in "dev mode":
@@ -20,15 +19,14 @@ ARG DOCKER_IMAGE_NAME_TEMPLATE="mcr.microsoft.com/playwright:v%version%-focal"
 # Instead, I need to use the same trick Playwright themselves use,
 # which is to install Playwright using a temporary Npm project
 # https://github.com/microsoft/playwright/blob/35a9daa4255f2ba556d4d7af6243cc84d1ac4f2a/utils/docker/Dockerfile.focal
-RUN sudo \
-    mkdir -p ${PLAYWRIGHT_BROWSERS_PATH} && \
+RUN sudo bash -c "mkdir -p ${PLAYWRIGHT_BROWSERS_PATH} && \
     mkdir -p ${PLAYWRIGHT_BROWSERS_PATH}-agent && \
     cd ${PLAYWRIGHT_BROWSERS_PATH}-agent && npm init -y && \
     npm i playwright@latest && \
     npx playwright@latest mark-docker-image "${DOCKER_IMAGE_NAME_TEMPLATE}" && \
     npx --yes playwright@latest install --with-deps && rm -rf /var/lib/apt/lists/* && \
     rm -rf ${PLAYWRIGHT_BROWSERS_PATH}-agent && \
-    chmod -R 777 ${PLAYWRIGHT_BROWSERS_PATH} \
+    chmod -R 777 ${PLAYWRIGHT_BROWSERS_PATH}"
 
 ## https://www.gitpod.io/docs/config-docker
 USER gitpod
