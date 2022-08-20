@@ -2,15 +2,5 @@
   "files.autoSave": "onFocusChange",
   "workbench.startupEditor": "readme",
   "gitlens.showWelcomeOnInstall": false,
-  "gitlens.showWhatsNewAfterUpgrades": false,
-  "cucumberautocomplete.steps": [
-    "**/*.steps.ts"
-  ],
-  "cucumberautocomplete.syncfeatures": "**/*.feature",
-  "cucumberautocomplete.strictGherkinCompletion": true,
-  "editor.quickSuggestions": {
-    "other": true,
-    "comments": false,
-    "strings": true,
-  }
+  "gitlens.showWhatsNewAfterUpgrades": false
 }
