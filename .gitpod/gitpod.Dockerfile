@@ -20,6 +20,6 @@ RUN \
 
 ENV SHELL=/bin/bash
 
-RUN nvm install \
+RUN bash -c "nvm install \
     && nvm use \
-    && npm i -g http-server
+    && npm i -g http-server"
