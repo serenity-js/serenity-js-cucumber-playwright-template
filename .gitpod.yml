@@ -10,6 +10,7 @@ tasks:
   - name: 'Install'
     init: >
       npm ci &&
+      node -e "console.log(require('playwright-core/lib/utils').isLikelyNpxGlobal())" &&
       gp sync-done npm-ci
 
   - name: 'Serve reports'
