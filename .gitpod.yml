@@ -12,7 +12,7 @@ tasks:
         npm ci
 
   - name: 'Install VSCode Extensions'
-    init: |
+    command: |
         code --install-extension /vscode-extensions/cucumber-official.vsix
 
   - name: 'Serve reports'
