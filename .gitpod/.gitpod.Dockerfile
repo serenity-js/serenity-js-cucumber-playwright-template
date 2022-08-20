@@ -1,7 +1,7 @@
-FROM gitpod/workspace-full
-
 ARG DEBIAN_FRONTEND=noninteractive
 ARG TZ=UTC
+
+FROM gitpod/workspace-full
 
 RUN \
     sudo apt-get -yq install \
@@ -20,6 +20,4 @@ RUN \
 
 ENV SHELL=/bin/bash
 
-RUN bash -c "nvm install \
-    && nvm use \
-    && npm i -g http-server"
+RUN bash -c "npm i -g http-server"
