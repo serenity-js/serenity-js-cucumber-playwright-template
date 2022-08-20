@@ -2,13 +2,14 @@ FROM gitpod/workspace-full
 
 ARG DEBIAN_FRONTEND=noninteractive
 ARG TZ=UTC
+
+## https://www.gitpod.io/docs/config-docker
+USER gitpod
+
 # See https://playwright.dev/docs/ci#caching-browsers
 ENV PLAYWRIGHT_BROWSERS_PATH=/home/gitpod/.cache/ms-playwright
 ARG DOCKER_IMAGE_NAME_TEMPLATE="mcr.microsoft.com/playwright:v%version%-focal"
 ENV SHELL=/bin/bash
-
-## https://www.gitpod.io/docs/config-docker
-USER gitpod
 
 # Playwright has a peculiar installation procedure,
 # where it fails silently if you try to install it on GitPod
