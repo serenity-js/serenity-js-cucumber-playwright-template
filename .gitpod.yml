@@ -14,7 +14,7 @@ tasks:
       gp sync-done npm-ci
 
   - name: 'Serve reports'
-    # Starting HTTP server in the background, so it doesn't block pre-builds
+# Starting HTTP server in the background, so it doesn't block pre-builds
     before: >
       mkdir -p target/site/serenity &&
       (http-server target/site/serenity -p 8000 &)
@@ -31,4 +31,4 @@ vscode:
     - EditorConfig.EditorConfig
     - dbaeumer.vscode-eslint
     - eamodio.gitlens
-    - cucumberautocomplete
+    - alexkrechik.cucumberautocomplete

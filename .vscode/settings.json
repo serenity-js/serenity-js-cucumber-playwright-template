@@ -1,6 +1,15 @@
 {
+  "files.autoSave": "onFocusChange",
+  "gitlens.showWelcomeOnInstall": false,
+  "gitlens.showWhatsNewAfterUpgrades": false,
   "cucumberautocomplete.steps": [
     "features/**/*.steps.ts"
   ],
-  "cucumberautocomplete.strictGherkinCompletion": true
+  "cucumberautocomplete.syncfeatures": "features/**/*.feature",
+  "cucumberautocomplete.strictGherkinCompletion": true,
+  "editor.quickSuggestions": {
+    "other": "on",
+    "comments": "off",
+    "strings": "on"
+  }
 }
