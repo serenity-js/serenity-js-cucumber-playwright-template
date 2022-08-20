@@ -2,7 +2,8 @@ FROM gitpod/workspace-full
 
 ARG DEBIAN_FRONTEND=noninteractive
 ARG TZ=UTC
-ENV PLAYWRIGHT_BROWSERS_PATH=/ms-playwright
+# See https://playwright.dev/docs/ci#caching-browsers
+ENV PLAYWRIGHT_BROWSERS_PATH=~/.cache/ms-playwright/ms-playwright
 ARG DOCKER_IMAGE_NAME_TEMPLATE="mcr.microsoft.com/playwright:v%version%-focal"
 ENV SHELL=/bin/bash
 
@@ -14,6 +15,8 @@ ENV SHELL=/bin/bash
 # Instead, I need to use the same trick Playwright themselves use,
 # which is to install Playwright using a temporary Npm project
 # https://github.com/microsoft/playwright/blob/35a9daa4255f2ba556d4d7af6243cc84d1ac4f2a/utils/docker/Dockerfile.focal
+
+USER gitpod
 
 RUN mkdir ${PLAYWRIGHT_BROWSERS_PATH} && \
     mkdir ${PLAYWRIGHT_BROWSERS_PATH}-agent && \
