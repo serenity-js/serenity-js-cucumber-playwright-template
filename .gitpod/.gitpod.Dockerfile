@@ -18,8 +18,8 @@ ENV SHELL=/bin/bash
 
 USER gitpod
 
-RUN mkdir ${PLAYWRIGHT_BROWSERS_PATH} && \
-    mkdir ${PLAYWRIGHT_BROWSERS_PATH}-agent && \
+RUN mkdir -p ${PLAYWRIGHT_BROWSERS_PATH} && \
+    mkdir -p ${PLAYWRIGHT_BROWSERS_PATH}-agent && \
     cd ${PLAYWRIGHT_BROWSERS_PATH}-agent && npm init -y && \
     npm i playwright@latest && \
     npx playwright mark-docker-image "${DOCKER_IMAGE_NAME_TEMPLATE}" && \
