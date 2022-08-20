@@ -4,27 +4,10 @@
   "gitlens.showWelcomeOnInstall": false,
   "gitlens.showWhatsNewAfterUpgrades": false,
   "cucumberautocomplete.steps": [
-    "features/step-definitions/*.steps.ts"
+    "**/*.steps.ts"
   ],
-  "cucumberautocomplete.syncfeatures": "features/**/*.feature",
+  "cucumberautocomplete.syncfeatures": "**/*.feature",
   "cucumberautocomplete.strictGherkinCompletion": true,
-  "cucumberautocomplete.customParameters": [
-    {
-      "parameter": "[A-Z][a-z]+",
-      "value": "{actor}"
-    },
-    {
-      "parameter": "/he|she|they|his|her|their/",
-      "value": "{pronoun}"
-    }
-  ],
-  "cucumberautocomplete.formatConfOverride": {
-    "Given": 2,
-    "When": 3,
-    "Then": 3,
-    "And": 4,
-    "But": 4,
-  },
   "editor.quickSuggestions": {
     "other": true,
     "comments": false,
