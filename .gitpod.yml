@@ -7,19 +7,21 @@ ports:
     visibility: public
 
 tasks:
-  - name: 'Install'
-    init: >
-      npm ci &&
-      gp sync-done npm-ci
+  - name: 'Install Node Modules'
+    init: |
+        npm ci
+
+  - name: 'Install VSCode Extensions'
+    init: |
+        code --install-extension /vscode-extensions/cucumber-official.vsix
 
   - name: 'Serve reports'
-# Starting HTTP server in the background, so it doesn't block pre-builds
+    # Starting HTTP server in the background, so it doesn't block pre-builds
     before: >
       mkdir -p target/site/serenity &&
       (http-server target/site/serenity -p 8000 &)
 
   - name: 'Welcome'
-    init: gp sync-await npm-ci
     command: |
       echo "To run tests: npm test"
       echo "Check out the reports at"
@@ -30,4 +32,4 @@ vscode:
     - EditorConfig.EditorConfig
     - dbaeumer.vscode-eslint
     - eamodio.gitlens
-    - alexkrechik.cucumberautocomplete
+    # - CucumberOpen.cucumber-official  # pending: https://github.com/cucumber/vscode/issues/98
