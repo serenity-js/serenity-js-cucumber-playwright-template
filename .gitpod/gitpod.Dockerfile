@@ -18,5 +18,8 @@ RUN \
         libatspi2.0-0 \
         libwayland-client0
 
-RUN \
-    npm i -g http-server
+ENV SHELL=/bin/bash
+
+RUN nvm install \
+    && nvm use \
+    && npm i -g http-server

@@ -4,7 +4,6 @@ image:
 tasks:
   - name: 'Install'
     init: |
-      nvm install 
       npm ci
       npx --yes playwright install
 
@@ -12,7 +11,7 @@ tasks:
     init: |
       mkdir -p target/site/serenity
       cp .gitpod/index.html target/site/serenity
-      http-server target/site/serenity -p 8000
+      http-server target/site/serenity -p 8000 &
 
   - name: 'Welcome'
     command: |
