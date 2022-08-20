@@ -1,10 +1,10 @@
+FROM gitpod/workspace-full
+
 ARG DEBIAN_FRONTEND=noninteractive
 ARG TZ=UTC
 ENV PLAYWRIGHT_BROWSERS_PATH=/ms-playwright
 ARG DOCKER_IMAGE_NAME_TEMPLATE="mcr.microsoft.com/playwright:v%version%-focal"
 ENV SHELL=/bin/bash
-
-FROM gitpod/workspace-full
 
 # Playwright has a peculiar installation procedure,
 # where it fails silently if you try to install it on GitPod
