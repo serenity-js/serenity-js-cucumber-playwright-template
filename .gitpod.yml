@@ -17,6 +17,8 @@ tasks:
         sleep 10
         echo "Installing Cucumber extension..."
         code --install-extension /vscode-extensions/cucumber-official.vsix
+        echo "Installing Cucumber Quick extension..."
+        code --install-extension /vscode-extensions/cucumber-quick.vsix
 
   - name: 'Serve reports'
     # Starting HTTP server in the background, so it doesn't block pre-builds
