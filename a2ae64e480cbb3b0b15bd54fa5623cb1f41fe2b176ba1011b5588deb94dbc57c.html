@@ -223,7 +223,7 @@
             <a href="#"><i class="bi bi-chat-text"></i> Features</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 30-08-2022 11:21</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 30-08-2022 20:01</span>
     <br style="clear:left"/>
 </div>
 
@@ -345,7 +345,7 @@ I'd like to see an example
 
                                                     <h3>Scenarios</h3>
 
-                                                        <a name="32dc3dc5-ee25-4e04-9c09-07947cd5c693"></a>
+                                                        <a name="2a608a4b-a7fb-42df-a1a3-00381bed27d1"></a>
 
 
                                                             <div class="scenario-docs card" id="1638e6323606c0c734044b63eaf45a58d3c23928917abbd9145478a3967ff886">
@@ -443,8 +443,8 @@ to better describe each <code>Feature</code> and <code>Scenario</code>.
                                                                         (2 examples)
                                                                 </td>
                                                                 <td>2</td>
-                                                                <td>11:21:33</td>
-                                                                <td>3s 462ms</td>
+                                                                <td>20:01:29</td>
+                                                                <td>4s 610ms</td>
                                                                 <td>
                                                                         <a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
                                                                             style="display:none">SUCCESS</span>
@@ -800,11 +800,6 @@ st', {intersect: true}, true);
                 link: "a2ae64e480cbb3b0b15bd54fa5623cb1f41fe2b176ba1011b5588deb94dbc57c.html"
             },
         ]
-      ation',
-                result: 'SUCCESS',
-                link: "a2ae64e480cbb3b0b15bd54fa5623cb1f41fe2b176ba1011b5588deb94dbc57c.html"
-            },
-        ]
         const coverageData = {
             labels: [
                 'Form-Based Authentication',
@@ -893,6 +888,17 @@ st', {intersect: true}, true);
                 const firstPoint = points[0];
                 if (coverageReports[firstPoint.index].link) {
                     window.open(coverageReports[firstPoint.index].link, "_self")
+                }
+            }
+        }
+
+        coverageChartCtx.onclick = coverageClickHandler;
+    </script>
+    <!-- END COVERAGE CHART -->
+
+</body>
+</html>
+lf")
                 }
             }
         }
