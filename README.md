@@ -29,7 +29,11 @@ Learn more:
 
 ## Usage
 
-This repository is a GitHub template. You can use it to create new [GitHub repositories](https://help.github.com/en/articles/creating-a-repository-from-a-template) or simply [clone it to your computer](https://docs.github.com/en/free-pro-team@latest/github/creating-cloning-and-archiving-repositories/cloning-a-repository).
+This repository is a GitHub template. You can use it to [create a new GitHub repository](https://help.github.com/en/articles/creating-a-repository-from-a-template), [clone it to your computer](https://docs.github.com/en/free-pro-team@latest/github/creating-cloning-and-archiving-repositories/cloning-a-repository).
+
+You can also launch it in a virtual Gitpod workspace without having to install anything on your machine:
+
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/from-referrer/)
 
 ### Installation
 
