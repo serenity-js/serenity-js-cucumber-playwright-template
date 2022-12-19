@@ -25,8 +25,6 @@ tasks:
     command: |
       echo "To view Serenity Reports, visit:"
       gp url 8080
-      echo "To view Playwright Report, visit:"
-      gp url 8181
 
 vscode:
   extensions:
