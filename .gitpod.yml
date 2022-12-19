@@ -1,0 +1,53 @@
+image:
+  file: .gitpod/.gitpod.Dockerfile
+
+ports:
+  - port: 8080
+    onOpen: notify
+    visibility: public
+  - port: 8181
+    onOpen: notify
+    visibility: public
+
+tasks:
+  - name: 'Install Node modules'
+    init: |
+      nvm install
+      nvm use
+      npm ci
+      npm test
+      gp sync-done installation
+
+  - name: 'Serenity Reports'
+    init: gp sync-await installation
+    command: |
+      npx http-server -p 8080 target/site/serenity/
+
+  - name: 'Playwright Report'
+    init: gp sync-await installation
+    command: |
+      npx http-server -p 8181 playwright-report      
+
+  - name: 'Welcome'
+    init: gp sync-await installation
+    command: |
+      echo "To view Serenity Reports, visit:"
+      gp url 8080
+      echo "To view Playwright Report, visit:"
+      gp url 8181
+
+vscode:
+  extensions:
+    - dbaeumer.vscode-eslint
+    - EditorConfig.EditorConfig
+    - CucumberOpen.cucumber-official
+
+github:
+  prebuilds:
+    master: true
+    branches: true
+    pullRequests: true
+    pullRequestsFromForks: true
+    addCheck: prevent-merge-on-error
+    addComment: false
+    addBadge: true
