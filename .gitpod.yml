@@ -5,9 +5,6 @@ ports:
   - port: 8080
     onOpen: notify
     visibility: public
-  - port: 8181
-    onOpen: notify
-    visibility: public
 
 tasks:
   - name: 'Install Node modules'
@@ -22,11 +19,6 @@ tasks:
     init: gp sync-await installation
     command: |
       npx http-server -p 8080 target/site/serenity/
-
-  - name: 'Playwright Report'
-    init: gp sync-await installation
-    command: |
-      npx http-server -p 8181 playwright-report      
 
   - name: 'Welcome'
     init: gp sync-await installation
