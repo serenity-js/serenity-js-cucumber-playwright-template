@@ -22,6 +22,8 @@ jobs:
           node-version: ${{ matrix.node-version }}
       - name: Setup Node Modules
         uses: bahmutov/npm-install@v1
+      - name: Install Playwright Browsers
+        run: npx playwright install --with-deps
       - run: npm run lint
       - run: npm test
         env:
