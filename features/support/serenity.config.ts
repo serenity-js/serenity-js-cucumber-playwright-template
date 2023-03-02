@@ -22,15 +22,15 @@ const timeouts = {
 
 let browser: playwright.Browser;
 
+// Configure default Cucumber step timeout
+setDefaultTimeout(timeouts.cucumber.step.inMilliseconds());
+
 BeforeAll(async () => {
     // Launch the browser once before all the tests
     // Serenity/JS will take care of managing Playwright browser context and browser tabs.
     browser = await playwright.chromium.launch({
         headless: true,
     });
-
-    // Configure Cucumber
-    setDefaultTimeout(timeouts.cucumber.step.inMilliseconds());
 
     // Configure Serenity/JS
     configure({
