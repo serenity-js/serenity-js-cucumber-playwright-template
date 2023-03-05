@@ -54,7 +54,7 @@
     "is-ci": "^3.0.1",
     "npm-failsafe": "^1.0.0",
     "http-server": "^14.1.1",
-    "mkdirp": "^2.1.4",
+    "mkdirp": "^2.1.5",
     "playwright": "^1.31.2",
     "rimraf": "^4.3.0",
     "ts-node": "^10.9.1",
