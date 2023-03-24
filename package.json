@@ -32,7 +32,7 @@
   "homepage": "https://serenity-js.org",
   "engines": {
     "node": "^14 || ^16 || ^18",
-    "npm": "^6 || ^7 || ^8"
+    "npm": "^6 || ^7 || ^8 || ^9"
   },
   "devDependencies": {
     "@cucumber/cucumber": "^8.11.1",
