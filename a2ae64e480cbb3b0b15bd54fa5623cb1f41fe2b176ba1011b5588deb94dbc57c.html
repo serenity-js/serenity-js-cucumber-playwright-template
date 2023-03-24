@@ -223,7 +223,7 @@
             <a href="#"><i class="bi bi-chat-text"></i> Features</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 24-03-2023 16:14</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 24-03-2023 16:16</span>
     <br style="clear:left"/>
 </div>
 
@@ -345,7 +345,7 @@ I'd like to see an example
 
                                                     <h3>Scenarios</h3>
 
-                                                        <a name="9554b305-8f16-4320-96f8-af48e88edcb1"></a>
+                                                        <a name="38520c1e-bb62-42c5-ab5c-acd7f9d031df"></a>
 
 
                                                             <div class="scenario-docs card" id="1638e6323606c0c734044b63eaf45a58d3c23928917abbd9145478a3967ff886">
@@ -443,8 +443,8 @@ to better describe each <code>Feature</code> and <code>Scenario</code>.
                                                                         (2 examples)
                                                                 </td>
                                                                 <td>2</td>
-                                                                <td>16:14:32</td>
-                                                                <td>3s 658ms</td>
+                                                                <td>16:16:32</td>
+                                                                <td>5s 555ms</td>
                                                                 <td>
                                                                         <a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
                                                                             style="display:none">SUCCESS</span>
@@ -771,11 +771,7 @@ to better describe each <code>Feature</code> and <code>Scenario</code>.
     <!-- END SUMMARY CHART -->
 </body>
 </html>
-   options: durationOptions
-        });
-
-        function durationClickHandler(click) {
-            const points = durationChart.getElementsAtEventForMode(click, 'nearest', {intersect: true}, true);
+st', {intersect: true}, true);
             if (points.length) {
                 const firstPoint = points[0];
                 window.open(durationDetailsReports[firstPoint.index].link, "_self")
@@ -892,6 +888,17 @@ to better describe each <code>Feature</code> and <code>Scenario</code>.
                 const firstPoint = points[0];
                 if (coverageReports[firstPoint.index].link) {
                     window.open(coverageReports[firstPoint.index].link, "_self")
+                }
+            }
+        }
+
+        coverageChartCtx.onclick = coverageClickHandler;
+    </script>
+    <!-- END COVERAGE CHART -->
+
+</body>
+</html>
+lf")
                 }
             }
         }
