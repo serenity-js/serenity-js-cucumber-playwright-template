@@ -30,7 +30,7 @@ jobs:
           CI: true
 
       - name: GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@v4.4.1
+        uses: JamesIves/github-pages-deploy-action@v4.4.2
         if: matrix.node-version == '16.x' && github.ref == 'refs/heads/main'
         with:
           BRANCH: gh-pages
