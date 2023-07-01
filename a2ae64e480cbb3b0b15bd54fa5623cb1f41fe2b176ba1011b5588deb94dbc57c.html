@@ -224,7 +224,7 @@
             <a href="#"><i class="bi bi-chat-text"></i> Features</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 01-07-2023 09:08</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 01-07-2023 13:26</span>
     <br style="clear:left"/>
 </div>
 
@@ -346,7 +346,7 @@ I'd like to see an example
 
                                                     <h3>Scenarios</h3>
 
-                                                        <a name="42d1f165-9c2a-4709-bc71-9c453d8f9918"></a>
+                                                        <a name="0c210cbc-ad9c-4a83-9d01-2c289c2acfe0"></a>
 
 
                                                             <div class="scenario-docs card" id="1638e6323606c0c734044b63eaf45a58d3c23928917abbd9145478a3967ff886">
@@ -444,8 +444,8 @@ to better describe each <code>Feature</code> and <code>Scenario</code>.
                                                                         (2 examples)
                                                                 </td>
                                                                 <td>2</td>
-                                                                <td>09:08:29</td>
-                                                                <td>3s 534ms</td>
+                                                                <td>13:26:29</td>
+                                                                <td>3s 430ms</td>
                                                                 <td>
                                                                         <a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
                                                                             style="display:none">SUCCESS</span>
@@ -772,7 +772,10 @@ to better describe each <code>Feature</code> and <code>Scenario</code>.
     <!-- END SUMMARY CHART -->
 </body>
 </html>
-         window.open(durationDetailsReports[firstPoint.index].link, "_self")
+rationChart.getElementsAtEventForMode(click, 'nearest', {intersect: true}, true);
+            if (points.length) {
+                const firstPoint = points[0];
+                window.open(durationDetailsReports[firstPoint.index].link, "_self")
 
             }
         }
@@ -886,17 +889,6 @@ to better describe each <code>Feature</code> and <code>Scenario</code>.
                 const firstPoint = points[0];
                 if (coverageReports[firstPoint.index].link) {
                     window.open(coverageReports[firstPoint.index].link, "_self")
-                }
-            }
-        }
-
-        coverageChartCtx.onclick = coverageClickHandler;
-    </script>
-    <!-- END COVERAGE CHART -->
-
-</body>
-</html>
-lf")
                 }
             }
         }
