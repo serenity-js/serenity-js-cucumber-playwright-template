@@ -48,7 +48,7 @@
     "eslint": "^8.45.0",
     "eslint-plugin-import": "^2.27.5",
     "eslint-plugin-simple-import-sort": "^10.0.0",
-    "eslint-plugin-unicorn": "^47.0.0",
+    "eslint-plugin-unicorn": "^48.0.0",
     "eslint-plugin-unused-imports": "^3.0.0",
     "is-ci": "^3.0.1",
     "npm-failsafe": "^1.0.0",
