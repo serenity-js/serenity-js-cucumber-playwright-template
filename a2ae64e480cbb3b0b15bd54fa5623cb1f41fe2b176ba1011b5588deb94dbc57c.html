@@ -1,11 +1,14 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/html">
-
-
+<html>
 <head>
     <meta charset="UTF-8"/>
-    <title>Features</title>
-<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Serenity Reports</title>
+
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 <link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
 <link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
 <link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
@@ -107,74 +110,50 @@
 
 
 
-    <script>
+    <script class="code" type="text/javascript">$(document).ready(function () {
 
-        $(document).ready(function () {
-
-            var scenarioTable = $('.scenario-result-table').DataTable({
-
-                "order": [],
+            $('.scenario-result-table').DataTable({
+                "order": [[0, "asc",], [3, "asc",]],
+                "pageLength": 10,
                 "language": {
+                    searchPlaceholder: "Filter",
+                    search: ""
+                },
+                columnDefs: [
+                    {type: 'time-elapsed-dhms', targets: 4}
+                ]
+            });
+
+            // Results table
+            $('#test-results-table').DataTable({
+                "order": [[0, "asc",], [3, "asc",]],
+                "pageLength": 10,
+                "lengthMenu": [[10, 25, 50, 100, 200, -1], [10, 25, 50, 100, 200, "All"]]
+            });
+
+            $('#evidence-table').DataTable({
+                searching: false,
+                paging: false,
+                info: false
+            });
+
+            $(".feature-coverage-table").DataTable({
+                searching: false,
+                paging: false,
+                info: false
+            });
+
+            $(".feature-coverage-table-with-pagination").DataTable({
+                order: [[0, "asc",]],
+                pageLength: 10,
+                language: {
                     searchPlaceholder: "Filter",
                     search: ""
                 }
             });
-
-            $('.example-table table').DataTable({
-                searching: false,
-                ordering: false,
-                paging: false,
-                info: false
-            });
-
-            $('.example-table-in-scenario table').DataTable({
-                searching: false,
-                ordering: false,
-                paging: false,
-                info: false
-            });
-
-            $('#evidence-table').DataTable(
-                {
-                    searching: false,
-                    ordering: false,
-                    paging: false,
-                    info: false
-                }
-            );
-
-
-            $(".scenario-docs .card-body table").wrap("<div class='table-responsive'></div>");
-
-            $("#requirements-tabs").tabs();
-            $("#test-tabs").tabs();
-
-            var requirementsTree = [{"text":"Form-Based Authentication","type":"feature","href":"a2ae64e480cbb3b0b15bd54fa5623cb1f41fe2b176ba1011b5588deb94dbc57c.html","nodes":[],"selectable":false,"tags":["\u003ca href\u003d\u0027##beforetable\u0027\u003e\u003ci class\u003d\u0027bi bi-check-circle-fill success-icon \u0027 title\u003d\u0027SUCCESS\u0027\u003e\u003c/i\u003e\u003c/a\u003e","\u003cspan class\u003d\u0027feature-count\u0027\u003e1 scenario\u003c/span\u003e"]}];
-
-            $('#tree').treeview({
-                data: requirementsTree,
-                enableLinks: true,
-                levels: 10,
-                showTags: true,
-                expandIcon: "bi bi-journal-plus",
-                collapseIcon: "bi bi-journal-minus",
-                emptyIcon: "bi bi-journal"
-            });
-
-        });
-    </script>
-
-    <script>
-        $(document).ready(function () {
-            $(".scenario-docs > div > p").html(function () {
-                var text = $(this).text().trim().split(" ");
-                var first = text.shift();
-                return (text.length > 0 ? "<strong>" + first + "</strong> " : first) + text.join(" ");
-            });
         });
     </script>
 </head>
-
 
 <body class="results-page">
 <div id="topheader">
@@ -189,25 +168,42 @@
     </div>
 </div>
 
-
 <div class="middlecontent">
+
+
     <div id="contenttop">
         <div class="middlebg">
-            <span class="breadcrumbs">
-            <a href='index.html'>Home</a> > <a href="capabilities.html">Requirements</a>
-
-                > <a href="3d15fb224daa0a60e7ea1909c694a3691e714bfa12bf5e64ad63e3c811f33eb3.html">Authentication</a>
-
-
-                    > <span class="truncate-40">Form-Based Authentication</span>
-
+        <span class="breadcrumbs"><a href="index.html">Home</a>
+                    > <a href="3d15fb224daa0a60e7ea1909c694a3691e714bfa12bf5e64ad63e3c811f33eb3.html" title="Authentication (breadcrumbType)">
+                    Authentication
+                </a>
+                > <span class="truncate-60">
+                Form-Based Authentication
             </span>
+        </span>
         </div>
         <div class="rightbg"></div>
     </div>
-    <div class="clr"></div>
 
+    <div class="clr"></div>
     <!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#"><i class="bi bi-journal-check"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="bi bi-journal-text"></i> Requirements</a>
+        </li>
+        <li >
+            <a href="7ea0a5e2d679b9deeda9910ae4a9bcd3a281e0d908303a9e16e486103e98880c.html"><i class="bi bi-chat-text"></i> Capabilities</a>
+        </li>
+        <li >
+            <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="bi bi-chat-text"></i> Features</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 07-08-2023 21:07:25</span>
+ second table*/-->
 
 <div>
     <ul class="nav nav-tabs" role="tablist">
@@ -224,7 +220,7 @@
             <a href="#"><i class="bi bi-chat-text"></i> Features</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 05-08-2023 04:12</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 07-08-2023 21:07</span>
     <br style="clear:left"/>
 </div>
 
@@ -346,7 +342,7 @@ I'd like to see an example
 
                                                     <h3>Scenarios</h3>
 
-                                                        <a name="f7de17e6-7a30-4f8e-a6d5-0e3b73708be4"></a>
+                                                        <a name="286d10e9-3a95-460b-8a34-1e0a13b1d0cb"></a>
 
 
                                                             <div class="scenario-docs card" id="1638e6323606c0c734044b63eaf45a58d3c23928917abbd9145478a3967ff886">
@@ -444,8 +440,8 @@ to better describe each <code>Feature</code> and <code>Scenario</code>.
                                                                         (2 examples)
                                                                 </td>
                                                                 <td>2</td>
-                                                                <td>04:12:50</td>
-                                                                <td>5s 848ms</td>
+                                                                <td>21:07:19</td>
+                                                                <td>3s 401ms</td>
                                                                 <td>
                                                                         <a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
                                                                             style="display:none">SUCCESS</span>
@@ -772,7 +768,10 @@ to better describe each <code>Feature</code> and <code>Scenario</code>.
     <!-- END SUMMARY CHART -->
 </body>
 </html>
-         window.open(durationDetailsReports[firstPoint.index].link, "_self")
+rationChart.getElementsAtEventForMode(click, 'nearest', {intersect: true}, true);
+            if (points.length) {
+                const firstPoint = points[0];
+                window.open(durationDetailsReports[firstPoint.index].link, "_self")
 
             }
         }
@@ -886,17 +885,6 @@ to better describe each <code>Feature</code> and <code>Scenario</code>.
                 const firstPoint = points[0];
                 if (coverageReports[firstPoint.index].link) {
                     window.open(coverageReports[firstPoint.index].link, "_self")
-                }
-            }
-        }
-
-        coverageChartCtx.onclick = coverageClickHandler;
-    </script>
-    <!-- END COVERAGE CHART -->
-
-</body>
-</html>
-lf")
                 }
             }
         }
