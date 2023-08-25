@@ -38,6 +38,6 @@ github:
     branches: false
     pullRequests: true
     pullRequestsFromForks: false
-    addCheck: prevent-merge-on-error
+    addCheck: true
     addComment: false
     addBadge: true
