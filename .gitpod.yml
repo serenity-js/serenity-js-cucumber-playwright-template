@@ -35,9 +35,9 @@ vscode:
 github:
   prebuilds:
     master: true
-    branches: true
+    branches: false
     pullRequests: true
-    pullRequestsFromForks: true
+    pullRequestsFromForks: false
     addCheck: prevent-merge-on-error
     addComment: false
     addBadge: true
