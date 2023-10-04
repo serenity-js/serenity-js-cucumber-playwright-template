@@ -6,7 +6,6 @@
  */
 module.exports = {
     default: [
-        `--publish-quiet`,
         `--require-module 'ts-node/register'`,      // use TypeScript in-memory transpiler, ts-node
         `--format "@serenity-js/cucumber"`,         // use Serenity/JS Cucumber adapter - https://serenity-js.org/modules/cucumber/
         `--require "./features/**/*.steps.ts"`,     // load step definition libraries
