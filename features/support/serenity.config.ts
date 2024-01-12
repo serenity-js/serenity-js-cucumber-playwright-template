@@ -1,9 +1,9 @@
 import { AfterAll, BeforeAll, setDefaultTimeout } from '@cucumber/cucumber';
 import { configure, Duration } from '@serenity-js/core';
+import path from 'path';
 import * as playwright from 'playwright';
 
 import { Actors } from '../../test';
-import * as path from "path";
 
 const timeouts = {
     cucumber: {
