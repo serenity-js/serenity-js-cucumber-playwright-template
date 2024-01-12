@@ -15,19 +15,20 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/serenity-js/serenity-js-cucumber-webdriverio-template.git"
+    "url": "git+https://github.com/serenity-js/serenity-js-cucumber-playwright-template.git"
   },
   "keywords": [
     "serenity-js",
     "bdd",
     "cucumber",
     "testing",
-    "webdriverio"
+    "playwright",
+    "playwright-test"
   ],
   "author": "Jan Molak <jan.molak@smartcodeltd.co.uk>",
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/serenity-js/serenity-js-cucumber-webdriverio-template/issues"
+    "url": "https://github.com/serenity-js/serenity-js-cucumber-playwright-template/issues"
   },
   "homepage": "https://serenity-js.org",
   "engines": {
