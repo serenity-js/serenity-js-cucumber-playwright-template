@@ -1,11 +1,9 @@
 import { AfterAll, BeforeAll, setDefaultTimeout } from '@cucumber/cucumber';
-import { ConsoleReporter } from '@serenity-js/console-reporter';
-import { ArtifactArchiver, configure, Duration } from '@serenity-js/core';
-import { SerenityBDDReporter } from '@serenity-js/serenity-bdd';
-import { Photographer, TakePhotosOfInteractions /* TakePhotosOfFailures */ } from '@serenity-js/web';
+import { configure, Duration } from '@serenity-js/core';
 import * as playwright from 'playwright';
 
 import { Actors } from '../../test';
+import * as path from "path";
 
 const timeouts = {
     cucumber: {
@@ -44,11 +42,13 @@ BeforeAll(async () => {
 
         // Configure Serenity/JS reporting services
         crew: [
-            ArtifactArchiver.storingArtifactsAt('./target/site/serenity'),
-            new SerenityBDDReporter(),
-            ConsoleReporter.forDarkTerminals(),
-            Photographer.whoWill(TakePhotosOfInteractions),         // capture screenshots of all the interactions; slower but more comprehensive
-            // Photographer.whoWill(TakePhotosOfFailures),             // capture screenshots of failed interactions; much faster
+            [ '@serenity-js/console-reporter', { theme: 'auto' } ],
+            [ '@serenity-js/web:Photographer', {
+                // strategy: 'TakePhotosOfInteractions',    // capture screenshots of all the interactions; slower but more comprehensive
+                strategy: 'TakePhotosOfFailures',           // capture screenshots of failed interactions; much faster
+            } ],
+            [ '@serenity-js/core:ArtifactArchiver', { outputDirectory: path.resolve(__dirname, '../../target/site/serenity') } ],
+            [ '@serenity-js/serenity-bdd', { specDirectory: path.resolve(__dirname, '../../features') } ],
         ],
 
         cueTimeout: timeouts.serenity.cueTimeout,
