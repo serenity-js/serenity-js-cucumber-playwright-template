@@ -55,7 +55,7 @@
     "npm-failsafe": "^1.2.0",
     "http-server": "^14.1.1",
     "mkdirp": "^3.0.1",
-    "playwright": "^1.40.1",
+    "playwright": "^1.41.2",
     "rimraf": "^5.0.5",
     "ts-node": "^10.9.2",
     "typescript": "^5.3.3"
