@@ -1,4 +1,4 @@
-The Internet - Authentication
+# The Internet - Authentication
 
 Narrative:
 In order to learn how to implement *high-quality automated tests*
