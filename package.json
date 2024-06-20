@@ -58,6 +58,6 @@
     "playwright": "^1.44.1",
     "rimraf": "^5.0.7",
     "ts-node": "^10.9.2",
-    "typescript": "^5.4.5"
+    "typescript": "^5.5.2"
   }
 }
