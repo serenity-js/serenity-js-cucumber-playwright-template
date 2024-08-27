@@ -115,7 +115,11 @@
                     search: ""
                 },
                 columnDefs: [
-                    {type: 'time-elapsed-dhms', targets: 5}
+                    {
+                        targets: 4,
+                        visible: false
+                    },
+                    {type: 'time-elapsed-dhms', targets: 6}
                 ]
             })
             $("#manual-scenario-results").DataTable({
@@ -124,6 +128,12 @@
                     searchPlaceholder: "Filter",
                     search: ""
                 },
+                columnDefs: [
+                    {
+                        targets: 4,
+                        visible: false
+                    },
+                ]
             })
 
             // Results table
@@ -142,7 +152,17 @@
             $(".feature-coverage-table").DataTable({
                 searching: true,
                 paging: false,
-                info: false
+                info: false,
+                language: {
+                    searchPlaceholder: "Filter",
+                    search: ""
+                },
+                columnDefs: [
+                    {
+                        targets: 2,
+                        visible: false
+                    },
+                ]
             });
 
             $(".feature-coverage-table-with-pagination").DataTable({
@@ -152,7 +172,13 @@
                 language: {
                     searchPlaceholder: "Filter",
                     search: ""
-                }
+                },
+                columnDefs: [
+                    {
+                        targets: 2,
+                        visible: false
+                    },
+                ]
             });
         });
     </script>
@@ -198,7 +224,7 @@
             <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="bi bi-chat-text"></i> Features</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 19-08-2024 01:34:45</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 27-08-2024 15:53:29</span>
     <br style="clear:left"/>
 </div>
     <div class="clr"></div>
@@ -295,48 +321,48 @@
                     <td>
                         <i class="bi bi-flag-fill"></i> Tests Started
                     </td>
-                    <td>Aug 19, 2024 01:34:38</td>
+                    <td>Aug 27, 2024 15:53:24</td>
                 </tr>
                 <tr scope="row">
                     <td>
                         <i class="bi bi-stop-circle"></i> Tests
                         Finished
                     </td>
-                    <td>Aug 19, 2024 01:34:42</td>
+                    <td>Aug 27, 2024 15:53:26</td>
                 </tr>
                 <tr scope="row">
                     <td>
                         <i class="bi bi-stopwatch"></i> Total
                         Duration
                     </td>
-                    <td>3s</td>
+                    <td>1s</td>
                 </tr>
                 <tr scope="row">
                     <td>
                         <i class="bi bi-trophy"></i> Fastest Test
                     </td>
-                    <td>1s</td>
+                    <td>779ms</td>
                 </tr>
                 <tr scope="row">
                     <td>
                         <i class="bi bi-skip-start"></i> Slowest
                         Test
                     </td>
-                    <td>1s</td>
+                    <td>949ms</td>
                 </tr>
                 <tr scope="row">
                     <td>
                         <i class="bi bi-stopwatch"></i> Average
                         Execution Time
                     </td>
-                    <td>1s</td>
+                    <td>864ms</td>
                 </tr>
                 <tr scope="row">
                     <td>
                         <i class="bi bi-stopwatch-fill"></i> Total
                         Execution Time
                     </td>
-                    <td>3s</td>
+                    <td>1s</td>
                 </tr>
                 </tbody>
             </table>
@@ -353,12 +379,12 @@
 
                                                                     <h4>Features</h4>
 
-                                                                    <table class="table feature-coverage-table"
-                                                                           id="Feature">
+                                                                    <table class="table feature-coverage-table" id="Feature" style="width:100%">
                                                                         <thead>
                                                                         <tr>
                                                                             <th>Feature</th>
                                                                             <th style="width:1em;">Scenarios</th>
+                                                                            <th style="width:1em;">StepsText</th>
                                                                             <th style="width:1em;">Test&nbsp;Cases</th>
                                                                             <th style="width:1em;">%&nbsp;Pass</th>
                                                                             <th style="width:1em;">Result</th>
@@ -371,6 +397,37 @@
                                                                                             <a href="a2ae64e480cbb3b0b15bd54fa5623cb1f41fe2b176ba1011b5588deb94dbc57c.html"> Form-based authentication</a>
                                                                                     </td>
                                                                                     <td>1</td>
+                                                                                    <td>Using username and password to log in #1 - username: tomsmith, password: SuperSecretPassword!, outcome: succeeded
+Given Alice starts with the "Form Authentication" example
+Alice navigates to "/"
+Alice picks example called Form Authentication
+Alice clicks on the first of available examples where Text does equal "Form Authentication"
+When she logs in using "tomsmith" and "SuperSecretPassword!"
+Alice logs in as tomsmith
+Alice enters "tomsmith" into username field
+Alice enters "SuperSecretPassword!" into password field
+Alice clicks on login button
+Then she should see that authentication has succeeded
+Alice verifies that authentication has succeeded
+Alice verifies that flash alert is present
+Alice ensures that flash message does become visible
+Alice ensures that the text of flash message does include "You logged into a secure area!"
+Using username and password to log in #2 - username: foobar, password: barfoo, outcome: failed
+Given Alice starts with the "Form Authentication" example
+Alice navigates to "/"
+Alice picks example called Form Authentication
+Alice clicks on the first of available examples where Text does equal "Form Authentication"
+When she logs in using "foobar" and "barfoo"
+Alice logs in as foobar
+Alice enters "foobar" into username field
+Alice enters "barfoo" into password field
+Alice clicks on login button
+Then she should see that authentication has failed
+Alice verifies that authentication has failed
+Alice verifies that flash alert is present
+Alice ensures that flash message does become visible
+Alice ensures that the text of flash message does include "Your username is invalid!"
+</td>
                                                                                     <td>2</td>
                                                                                     <td>100%</td>
                                                                                     <td>
@@ -445,7 +502,7 @@
                         <i class="bi bi-stopwatch"></i> Total
                         Duration
                     </td>
-                    <td>3s</td>
+                    <td>1s</td>
                 </tr>
                 <tr scope="row">
                     <td>
@@ -455,7 +512,7 @@
                     <td>
                         <i class="bi bi-trophy"></i> Fastest Test
                     </td>
-                    <td>1s</td>
+                    <td>779ms</td>
                 </tr>
                 <tr scope="row">
                     <td>
@@ -466,30 +523,30 @@
                         <i class="bi bi-skip-start"></i> Slowest
                         Test
                     </td>
-                    <td>1s</td>
+                    <td>949ms</td>
                 </tr>
                 <tr scope="row">
                     <td>
                         <i class="bi bi-flag-fill"></i> Tests Started
                     </td>
-                    <td>Aug 19, 2024 01:34:38</td>
+                    <td>Aug 27, 2024 15:53:24</td>
                     <td>
                         <i class="bi bi-stopwatch"></i> Average
                         Execution Time
                     </td>
-                    <td>1s</td>
+                    <td>864ms</td>
                 </tr>
                 <tr scope="row">
                     <td>
                         <i class="bi bi-stop-circle"></i> Tests
                         Finished
                     </td>
-                    <td>Aug 19, 2024 01:34:42</td>
+                    <td>Aug 27, 2024 15:53:26</td>
                     <td>
                         <i class="bi bi-stopwatch-fill"></i> Total
                         Execution Time
                     </td>
-                    <td>3s</td>
+                    <td>1s</td>
                 </tr>
                 </tbody>
             </table>
@@ -498,14 +555,14 @@
 
                                                         <h3><i class="bi bi-gear"></i> Automated Scenarios</h3>
 
-                                                            <table class="scenario-result-table table"
-                                                                   id="scenario-results">
+                                                            <table class="scenario-result-table table" id="scenario-results" style="width:100%">
                                                                 <thead>
                                                                 <tr>
                                                                     <th>feature</th>
                                                                     <th class="test-name-column">Scenario</th>
                                                                     <th>Context</th>
                                                                     <th>Steps</th>
+                                                                    <th>StepsText</th>
                                                                     <th>Started</th>
                                                                     <th>Total Duration</th>
                                                                     <th>Result</th>
@@ -527,8 +584,11 @@
                                                                         <td><span style="display:none"></span>
                                                                         </td>
                                                                         <td>2</td>
-                                                                        <td data-order="1724031278">01:34:38</td>
-                                                                        <td>3s 747ms</td>
+                                                                        <td>When she logs in using "<username>" and "<password>"
+Then she should see that authentication has <outcome>
+</td>
+                                                                        <td data-order="1724774004">15:53:24</td>
+                                                                        <td>1s 734ms</td>
                                                                         <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
                                                                                     style="display:none">SUCCESS</span>
                                                                         </td>
@@ -596,7 +656,7 @@
 <div class="container-fluid">
     <div class="row">
         <div class="col-sm-12">
-            <span class="version">Serenity BDD version 4.1.6</span>
+            <span class="version">Serenity BDD version 4.1.20</span>
         </div>
     </div>
 </div>
@@ -803,7 +863,7 @@
             datasets: [{
                 label: 'Number of tests per duration',
                 fill: false,
-                data: ['0','2','0','0','0','0','0','0'],
+                data: ['2','0','0','0','0','0','0','0'],
                 backgroundColor: 'rgba(83, 146, 255,0.5)',
                 borderColor: 'rgba(83, 146, 255, 1)',
             }]
