@@ -9,12 +9,10 @@ on:
 
 jobs:
   build:
+    runs-on: ubuntu-latest
     strategy:
       matrix:
-        os: [ ubuntu-latest, windows-latest ]
-        node-version: [ 18.x, 20.x ]
-
-    runs-on: ${{ matrix.os }}
+        node-version: [ 18.x, 20.x, 22.x ]
 
     steps:
       - uses: actions/checkout@v4
@@ -39,8 +37,8 @@ jobs:
 
       - name: GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4.6.9
-        if: matrix.os == 'ubuntu-latest' && matrix.node-version == '18.x' && github.ref == 'refs/heads/main'
+        if: matrix.node-version == '22.x' && github.ref == 'refs/heads/main'
         with:
-          BRANCH: gh-pages
-          FOLDER: target/site/serenity
-          CLEAN: true
+          branch: gh-pages
+          folder: target/site/serenity
+          clean: true
