@@ -34,11 +34,16 @@ BeforeAll(async () => {
     configure({
 
         // Configure Serenity/JS actors to use Playwright browser
-        actors: new Actors(browser, {
-            baseURL:                    'https://the-internet.herokuapp.com/',
-            defaultNavigationTimeout:   timeouts.playwright.defaultNavigationTimeout.inMilliseconds(),
-            defaultTimeout:             timeouts.playwright.defaultTimeout.inMilliseconds(),
-        }),
+        actors: new Actors(
+            browser,
+            {
+                baseURL: 'https://the-internet.herokuapp.com/',
+            },
+            {
+                defaultNavigationTimeout: timeouts.playwright.defaultNavigationTimeout.inMilliseconds(),
+                defaultTimeout: timeouts.playwright.defaultTimeout.inMilliseconds(),
+            }
+        ),
 
         // Configure Serenity/JS reporting services
         crew: [
