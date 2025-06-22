@@ -32,9 +32,9 @@
 
 <!-- Required Javascript -->
 <script src="bootstrap-treeview/dist/bootstrap-treeview.min.js"></script><!-- DataTables -->
-<link type="text/css" href="datatables/1.13.1/datatables.min.css" rel="stylesheet" />
-<script type="text/javascript" src="datatables/1.13.1/datatables.min.js"></script>
-<script type="text/javascript" src="datatables/1.13.1/time-elapsed-dhms.js"></script>
+<link type="text/css" href="datatables/2.3.1/datatables.min.css" rel="stylesheet" />
+<script type="text/javascript" src="datatables/2.3.1/datatables.min.js"></script>
+<script type="text/javascript" src="datatables/2.3.1/time-elapsed-dhms.js"></script>
 
 <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
 <script src="bootstrap/js/bootstrap.min.js"></script>
@@ -72,11 +72,11 @@
     Chart.register(ChartDataLabels);
 </script>
 <!-- JQuery-UI -->
-<link type="text/css" href="jqueryui/1.13.2/jquery-ui.css" rel="Stylesheet" />
-<script type="text/javascript" src="jqueryui/1.13.2/jquery-ui.js"></script><!-- DataTables -->
-<link type="text/css" href="datatables/1.13.1/datatables.min.css" rel="stylesheet" />
-<script type="text/javascript" src="datatables/1.13.1/datatables.min.js"></script>
-<script type="text/javascript" src="datatables/1.13.1/time-elapsed-dhms.js"></script>
+<link type="text/css" href="jquery-ui/1.14.1/jquery-ui.css" rel="Stylesheet" />
+<script type="text/javascript" src="jquery-ui/1.14.1/jquery-ui.js"></script><!-- DataTables -->
+<link type="text/css" href="datatables/2.3.1/datatables.min.css" rel="stylesheet" />
+<script type="text/javascript" src="datatables/2.3.1/datatables.min.js"></script>
+<script type="text/javascript" src="datatables/2.3.1/time-elapsed-dhms.js"></script>
 
 <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
 <script src="bootstrap/js/bootstrap.min.js"></script>
@@ -157,12 +157,6 @@
                     searchPlaceholder: "Filter",
                     search: ""
                 },
-                columnDefs: [
-                    {
-                        targets: 2,
-                        visible: false
-                    },
-                ]
             });
 
             $(".feature-coverage-table-with-pagination").DataTable({
@@ -173,12 +167,6 @@
                     searchPlaceholder: "Filter",
                     search: ""
                 },
-                columnDefs: [
-                    {
-                        targets: 2,
-                        visible: false
-                    },
-                ]
             });
         });
     </script>
@@ -224,7 +212,7 @@
             <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="bi bi-chat-text"></i> Features</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 21-06-2025 01:57:21</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 22-06-2025 06:06:33</span>
     <br style="clear:left"/>
 </div>
     <div class="clr"></div>
@@ -321,27 +309,27 @@
                     <td>
                         <i class="bi bi-flag-fill"></i> Tests Started
                     </td>
-                    <td>Jun 21, 2025 01:57:12</td>
+                    <td>Jun 22, 2025 06:06:27</td>
                 </tr>
                 <tr scope="row">
                     <td>
                         <i class="bi bi-stop-circle"></i> Tests
                         Finished
                     </td>
-                    <td>Jun 21, 2025 01:57:15</td>
+                    <td>Jun 22, 2025 06:06:28</td>
                 </tr>
                 <tr scope="row">
                     <td>
                         <i class="bi bi-stopwatch"></i> Total
                         Duration
                     </td>
-                    <td>2s</td>
+                    <td>1s</td>
                 </tr>
                 <tr scope="row">
                     <td>
                         <i class="bi bi-trophy"></i> Fastest Test
                     </td>
-                    <td>988ms</td>
+                    <td>719ms</td>
                 </tr>
                 <tr scope="row">
                     <td>
@@ -355,14 +343,14 @@
                         <i class="bi bi-stopwatch"></i> Average
                         Execution Time
                     </td>
-                    <td>1s</td>
+                    <td>865ms</td>
                 </tr>
                 <tr scope="row">
                     <td>
                         <i class="bi bi-stopwatch-fill"></i> Total
                         Execution Time
                     </td>
-                    <td>2s</td>
+                    <td>1s</td>
                 </tr>
                 </tbody>
             </table>
@@ -384,7 +372,6 @@
                                                                         <tr>
                                                                             <th>Feature</th>
                                                                             <th style="width:1em;">Scenarios</th>
-                                                                            <th style="width:1em;">StepsText</th>
                                                                             <th style="width:1em;">Test&nbsp;Cases</th>
                                                                             <th style="width:1em;">%&nbsp;Pass</th>
                                                                             <th style="width:1em;">Result</th>
@@ -397,37 +384,6 @@
                                                                                             <a href="a2ae64e480cbb3b0b15bd54fa5623cb1f41fe2b176ba1011b5588deb94dbc57c.html"> Form-based authentication</a>
                                                                                     </td>
                                                                                     <td>1</td>
-                                                                                    <td>Using username and password to log in #1 - username: tomsmith, password: SuperSecretPassword!, outcome: succeeded
-Given Alice starts with the &quot;Form Authentication&quot; example
-Alice navigates to &quot;/&quot;
-Alice picks example called Form Authentication
-Alice clicks on the first of available examples where Text does equal &quot;Form Authentication&quot;
-When she logs in using &quot;tomsmith&quot; and &quot;SuperSecretPassword!&quot;
-Alice logs in as tomsmith
-Alice enters &quot;tomsmith&quot; into username field
-Alice enters &quot;SuperSecretPassword!&quot; into password field
-Alice clicks on login button
-Then she should see that authentication has succeeded
-Alice verifies that authentication has succeeded
-Alice verifies that flash alert is present
-Alice ensures that flash message does become visible
-Alice ensures that the text of flash message does include &quot;You logged into a secure area!&quot;
-Using username and password to log in #2 - username: foobar, password: barfoo, outcome: failed
-Given Alice starts with the &quot;Form Authentication&quot; example
-Alice navigates to &quot;/&quot;
-Alice picks example called Form Authentication
-Alice clicks on the first of available examples where Text does equal &quot;Form Authentication&quot;
-When she logs in using &quot;foobar&quot; and &quot;barfoo&quot;
-Alice logs in as foobar
-Alice enters &quot;foobar&quot; into username field
-Alice enters &quot;barfoo&quot; into password field
-Alice clicks on login button
-Then she should see that authentication has failed
-Alice verifies that authentication has failed
-Alice verifies that flash alert is present
-Alice ensures that flash message does become visible
-Alice ensures that the text of flash message does include &quot;Your username is invalid!&quot;
-</td>
                                                                                     <td>2</td>
                                                                                     <td>100%</td>
                                                                                     <td>
@@ -502,7 +458,7 @@ Alice ensures that the text of flash message does include &quot;Your username is
                         <i class="bi bi-stopwatch"></i> Total
                         Duration
                     </td>
-                    <td>2s</td>
+                    <td>1s</td>
                 </tr>
                 <tr scope="row">
                     <td>
@@ -512,7 +468,7 @@ Alice ensures that the text of flash message does include &quot;Your username is
                     <td>
                         <i class="bi bi-trophy"></i> Fastest Test
                     </td>
-                    <td>988ms</td>
+                    <td>719ms</td>
                 </tr>
                 <tr scope="row">
                     <td>
@@ -529,24 +485,24 @@ Alice ensures that the text of flash message does include &quot;Your username is
                     <td>
                         <i class="bi bi-flag-fill"></i> Tests Started
                     </td>
-                    <td>Jun 21, 2025 01:57:12</td>
+                    <td>Jun 22, 2025 06:06:27</td>
                     <td>
                         <i class="bi bi-stopwatch"></i> Average
                         Execution Time
                     </td>
-                    <td>1s</td>
+                    <td>865ms</td>
                 </tr>
                 <tr scope="row">
                     <td>
                         <i class="bi bi-stop-circle"></i> Tests
                         Finished
                     </td>
-                    <td>Jun 21, 2025 01:57:15</td>
+                    <td>Jun 22, 2025 06:06:28</td>
                     <td>
                         <i class="bi bi-stopwatch-fill"></i> Total
                         Execution Time
                     </td>
-                    <td>2s</td>
+                    <td>1s</td>
                 </tr>
                 </tbody>
             </table>
@@ -562,7 +518,6 @@ Alice ensures that the text of flash message does include &quot;Your username is
                                                                     <th class="test-name-column">Scenario</th>
                                                                     <th>Context</th>
                                                                     <th>Steps</th>
-                                                                    <th>StepsText</th>
                                                                     <th>Started</th>
                                                                     <th>Total Duration</th>
                                                                     <th>Result</th>
@@ -584,11 +539,8 @@ Alice ensures that the text of flash message does include &quot;Your username is
                                                                         <td><span style="display:none"></span>
                                                                         </td>
                                                                         <td>2</td>
-                                                                        <td>When she logs in using &quot;&lt;username&gt;&quot; and &quot;&lt;password&gt;&quot;
-Then she should see that authentication has &lt;outcome&gt;
-</td>
-                                                                        <td data-order="1750471032">01:57:12</td>
-                                                                        <td>2s 341ms</td>
+                                                                        <td data-order="1750572387">06:06:27</td>
+                                                                        <td>1s 735ms</td>
                                                                         <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
                                                                                     style="display:none">SUCCESS</span>
                                                                         </td>
@@ -656,7 +608,7 @@ Then she should see that authentication has &lt;outcome&gt;
 <div class="container-fluid">
     <div class="row">
         <div class="col-sm-12">
-            <span class="version">Serenity BDD version 4.2.30</span>
+            <span class="version">Serenity BDD version 4.2.34</span>
         </div>
     </div>
 </div>
