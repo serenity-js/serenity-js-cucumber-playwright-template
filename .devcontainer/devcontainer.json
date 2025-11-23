@@ -1,0 +1,46 @@
+{
+  "image": "ghcr.io/serenity-js/playwright:v1.56.1-noble",
+
+  "features": {
+    "ghcr.io/devcontainers/features/desktop-lite:1": {},
+    "ghcr.io/devcontainers/features/github-cli:1": {}
+  },
+
+  "forwardPorts": [
+    6080,
+    8080
+  ],
+  "portsAttributes": {
+    "6080": {
+      "label": "Desktop"
+    },
+    "8080": {
+      "label": "Serenity Reports"
+    }
+  },
+  "postCreateCommand": {
+    "Install": "npm ci",
+    "Welcome": "sudo cp .devcontainer/first-run-notice.txt /workspaces/.codespaces/shared/first-run-notice.txt"
+  },
+  "waitFor": "postCreateCommand",
+  "postAttachCommand": {
+    "Serenity/JS Test Run": "npm test",
+    "Serenity Reports Preview": "npx http-server -p 8080 target/site/serenity/"
+  },
+
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "dbaeumer.vscode-eslint",
+        "editorconfig.editorconfig",
+        "eamodio.gitlens",
+        "stateful.runme"
+      ],
+      "settings": {
+        "workbench.editorAssociations": {
+          "*.md": "runme"
+        }
+      }
+    }
+  }
+}
