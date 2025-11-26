@@ -5,7 +5,11 @@
   "rangeStrategy": "bump",
   "packageRules": [
     {
-      "packagePatterns": ["^@serenity-js", "^playwright"],
+      "packagePatterns": [
+        "^@serenity-js",
+        "^playwright",
+        "serenity-js/playwright"
+      ],
       "groupName": "Serenity/JS and Playwright",
       "automerge": true
     },
