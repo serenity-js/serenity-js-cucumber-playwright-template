@@ -134,7 +134,8 @@ The template follows a clear structure to help you organize your tests:
 ```
 features/
 ├── authentication/
-│   └── form-based_authentication.feature  # Example BDD scenarios
+│   ├── form-based_authentication.feature  # Cucumber feature files
+│   └── readme.md                          # Feature narrative
 ├── step-definitions/                      # Cucumber step definitions
 │   ├── parameter.steps.ts                 # Custom parameter types
 │   └── the-internet.steps.ts              # Step definitions for test scenarios
@@ -154,9 +155,9 @@ target/site/serenity/                      # Generated Serenity BDD reports
 ```
 
 **Key files:**
-- `features/*.feature` - Test scenarios using Gherkin syntax (Given/When/Then)
+- `features/*.feature` - Cucumber scenarios written in Gherkin (Given/When/Then)
 - `features/step-definitions/` - Cucumber step definitions connecting Gherkin to implementation
-- `test/` - Tasks, questions, and abilities following the [Screenplay Pattern](https://serenity-js.org/handbook/design/screenplay-pattern/)
+- `test/` - Tasks and questions following the [Screenplay Pattern](https://serenity-js.org/handbook/design/screenplay-pattern/)
 
 ## Next steps
 
@@ -262,7 +263,7 @@ Need dedicated support, training, or consulting for your team?
 
 **[Contact Jan Molak](https://www.linkedin.com/in/janmolak/)** for:
 - 🎯 **Consulting & Training** - Custom workshops and team training sessions
-- 🤝 **Corporate Support** - Dedicated technical support and SLA-backed assistance  
+- 🤝 **Corporate Support** - Dedicated technical support and SLA-backed assistance
 - 🏗️ **Architecture Reviews** - Expert guidance on test automation strategy and implementation
 - 📊 **Corporate Sponsorship** - Tailored partnership opportunities for organizations
 
