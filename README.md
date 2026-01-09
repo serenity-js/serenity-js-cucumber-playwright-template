@@ -115,16 +115,16 @@ npm start               # starts a mini HTTP server and serves the test reports
 npm test
 
 # Run specific feature file
-npx cucumber-js features/authentication/form-based_authentication.feature
+npm test -- features/authentication/form-based_authentication.feature
 
 # Run tests with specific tags
-npx cucumber-js --tags "@smoke"
+npm test -- --tags "@smoke"
 
 # Run tests in headed mode (see the browser)
 HEADLESS=false npm test
 
 # Run tests with different configuration
-npx cucumber-js --profile <profile-name>
+npm test -- --profile <profile-name>
 ```
 
 ## Project Structure
