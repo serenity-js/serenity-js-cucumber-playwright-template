@@ -65,8 +65,8 @@ npx playwright install
 
 ##### Corporate networks
 
-If your environment requires proxy configuration or an internal registry like Artifactory or Nexus, add an [`.npmrc` file](https://docs.npmjs.com/cli/v6/configuring-npm/npmrc) file
-with the appropriate configuration to your home directory:
+If your environment requires proxy configuration or an internal registry like Artifactory or Nexus, add an [`.npmrc`](https://docs.npmjs.com/cli/v6/configuring-npm/npmrc) file
+with the appropriate configuration in your home directory:
 
 ```
 proxy=http://user:password@host.mycompany.com:8080/
