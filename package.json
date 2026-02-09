@@ -49,7 +49,7 @@
     "eslint-plugin-import": "^2.32.0",
     "eslint-plugin-simple-import-sort": "^12.1.1",
     "eslint-plugin-unicorn": "^62.0.0",
-    "eslint-plugin-unused-imports": "^4.3.0",
+    "eslint-plugin-unused-imports": "^4.4.1",
     "is-ci": "^4.1.0",
     "npm-failsafe": "^1.4.0",
     "http-server": "^14.1.1",
