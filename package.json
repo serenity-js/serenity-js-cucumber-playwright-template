@@ -34,7 +34,7 @@
     "node": "^20 || ^22 || ^24"
   },
   "devDependencies": {
-    "@cucumber/cucumber": "^12.7.0",
+    "@cucumber/cucumber": "^12.8.0",
     "@serenity-js/assertions": "^3.42.0",
     "@serenity-js/console-reporter": "^3.42.0",
     "@serenity-js/core": "^3.42.0",
