@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "startedAt": "2026-08-20T10:34:19.904Z",
-  "finishedAt": "2026-08-20T10:34:21.601Z",
+  "startedAt": "2026-08-20T10:51:58.212Z",
+  "finishedAt": "2026-08-20T10:52:00.866Z",
   "outcomes": {
     "passed": 1,
     "failed": 0,
@@ -17,8 +17,8 @@
       "outcome": {
         "code": 64
       },
-      "duration": 1697,
-      "startedAt": "2026-08-20T10:34:19.904Z",
+      "duration": 2654,
+      "startedAt": "2026-08-20T10:51:58.212Z",
       "source": {
         "path": "/__w/serenity-js-cucumber-playwright-template/serenity-js-cucumber-playwright-template/features/authentication/form-based_authentication.feature",
         "line": 24
@@ -84,7 +84,7 @@
             "outcome": {
               "code": 64
             },
-            "duration": 916,
+            "duration": 1431,
             "activities": [
               {
                 "type": "Task",
@@ -92,8 +92,8 @@
                 "outcome": {
                   "code": 64
                 },
-                "duration": 574,
-                "startedAt": "2026-08-20T10:34:18.985Z",
+                "duration": 1040,
+                "startedAt": "2026-08-20T10:51:56.780Z",
                 "children": [
                   {
                     "type": "Interaction",
@@ -101,8 +101,8 @@
                     "outcome": {
                       "code": 64
                     },
-                    "duration": 214,
-                    "startedAt": "2026-08-20T10:34:19.006Z",
+                    "duration": 639,
+                    "startedAt": "2026-08-20T10:51:56.797Z",
                     "children": [],
                     "location": {
                       "path": "/__w/serenity-js-cucumber-playwright-template/serenity-js-cucumber-playwright-template/features/step-definitions/the-internet.steps.ts",
@@ -116,8 +116,8 @@
                     "outcome": {
                       "code": 64
                     },
-                    "duration": 317,
-                    "startedAt": "2026-08-20T10:34:19.231Z",
+                    "duration": 362,
+                    "startedAt": "2026-08-20T10:51:57.447Z",
                     "children": [
                       {
                         "type": "Interaction",
@@ -125,8 +125,8 @@
                         "outcome": {
                           "code": 64
                         },
-                        "duration": 305,
-                        "startedAt": "2026-08-20T10:34:19.232Z",
+                        "duration": 351,
+                        "startedAt": "2026-08-20T10:51:57.448Z",
                         "children": [],
                         "location": {
                           "path": "/__w/serenity-js-cucumber-playwright-template/serenity-js-cucumber-playwright-template/test/examples/PickExample.ts",
@@ -153,8 +153,8 @@
                 "outcome": {
                   "code": 64
                 },
-                "duration": 208,
-                "startedAt": "2026-08-20T10:34:19.560Z",
+                "duration": 271,
+                "startedAt": "2026-08-20T10:51:57.821Z",
                 "children": [
                   {
                     "type": "Task",
@@ -162,8 +162,8 @@
                     "outcome": {
                       "code": 64
                     },
-                    "duration": 187,
-                    "startedAt": "2026-08-20T10:34:19.571Z",
+                    "duration": 253,
+                    "startedAt": "2026-08-20T10:51:57.828Z",
                     "children": [
                       {
                         "type": "Interaction",
@@ -171,8 +171,8 @@
                         "outcome": {
                           "code": 64
                         },
-                        "duration": 27,
-                        "startedAt": "2026-08-20T10:34:19.571Z",
+                        "duration": 36,
+                        "startedAt": "2026-08-20T10:51:57.829Z",
                         "children": [],
                         "location": {
                           "path": "/__w/serenity-js-cucumber-playwright-template/serenity-js-cucumber-playwright-template/test/authentication/Authenticate.ts",
@@ -187,7 +187,7 @@
                           "code": 64
                         },
                         "duration": 5,
-                        "startedAt": "2026-08-20T10:34:19.609Z",
+                        "startedAt": "2026-08-20T10:51:57.874Z",
                         "children": [],
                         "location": {
                           "path": "/__w/serenity-js-cucumber-playwright-template/serenity-js-cucumber-playwright-template/test/authentication/Authenticate.ts",
@@ -201,8 +201,8 @@
                         "outcome": {
                           "code": 64
                         },
-                        "duration": 122,
-                        "startedAt": "2026-08-20T10:34:19.625Z",
+                        "duration": 179,
+                        "startedAt": "2026-08-20T10:51:57.890Z",
                         "children": [],
                         "location": {
                           "path": "/__w/serenity-js-cucumber-playwright-template/serenity-js-cucumber-playwright-template/test/authentication/Authenticate.ts",
@@ -229,8 +229,8 @@
                 "outcome": {
                   "code": 64
                 },
-                "duration": 105,
-                "startedAt": "2026-08-20T10:34:19.769Z",
+                "duration": 93,
+                "startedAt": "2026-08-20T10:51:58.093Z",
                 "children": [
                   {
                     "type": "Task",
@@ -238,8 +238,8 @@
                     "outcome": {
                       "code": 64
                     },
-                    "duration": 85,
-                    "startedAt": "2026-08-20T10:34:19.779Z",
+                    "duration": 74,
+                    "startedAt": "2026-08-20T10:51:58.102Z",
                     "children": [
                       {
                         "type": "Task",
@@ -247,8 +247,8 @@
                         "outcome": {
                           "code": 64
                         },
-                        "duration": 60,
-                        "startedAt": "2026-08-20T10:34:19.780Z",
+                        "duration": 50,
+                        "startedAt": "2026-08-20T10:51:58.102Z",
                         "children": [
                           {
                             "type": "Interaction",
@@ -256,8 +256,8 @@
                             "outcome": {
                               "code": 64
                             },
-                            "duration": 50,
-                            "startedAt": "2026-08-20T10:34:19.780Z",
+                            "duration": 40,
+                            "startedAt": "2026-08-20T10:51:58.102Z",
                             "children": [],
                             "location": {
                               "path": "/__w/serenity-js-cucumber-playwright-template/serenity-js-cucumber-playwright-template/features/step-definitions/the-internet.steps.ts",
@@ -278,8 +278,8 @@
                         "outcome": {
                           "code": 64
                         },
-                        "duration": 3,
-                        "startedAt": "2026-08-20T10:34:19.851Z",
+                        "duration": 2,
+                        "startedAt": "2026-08-20T10:51:58.163Z",
                         "children": [],
                         "location": {
                           "path": "/__w/serenity-js-cucumber-playwright-template/serenity-js-cucumber-playwright-template/features/step-definitions/the-internet.steps.ts",
@@ -312,7 +312,7 @@
             "outcome": {
               "code": 64
             },
-            "duration": 781,
+            "duration": 1223,
             "activities": [
               {
                 "type": "Task",
@@ -320,8 +320,8 @@
                 "outcome": {
                   "code": 64
                 },
-                "duration": 468,
-                "startedAt": "2026-08-20T10:34:19.906Z",
+                "duration": 851,
+                "startedAt": "2026-08-20T10:51:58.214Z",
                 "children": [
                   {
                     "type": "Interaction",
@@ -329,8 +329,8 @@
                     "outcome": {
                       "code": 64
                     },
-                    "duration": 150,
-                    "startedAt": "2026-08-20T10:34:19.912Z",
+                    "duration": 523,
+                    "startedAt": "2026-08-20T10:51:58.219Z",
                     "children": [],
                     "location": {
                       "path": "/__w/serenity-js-cucumber-playwright-template/serenity-js-cucumber-playwright-template/features/step-definitions/the-internet.steps.ts",
@@ -344,8 +344,8 @@
                     "outcome": {
                       "code": 64
                     },
-                    "duration": 291,
-                    "startedAt": "2026-08-20T10:34:20.072Z",
+                    "duration": 301,
+                    "startedAt": "2026-08-20T10:51:58.753Z",
                     "children": [
                       {
                         "type": "Interaction",
@@ -353,8 +353,8 @@
                         "outcome": {
                           "code": 64
                         },
-                        "duration": 280,
-                        "startedAt": "2026-08-20T10:34:20.072Z",
+                        "duration": 291,
+                        "startedAt": "2026-08-20T10:51:58.753Z",
                         "children": [],
                         "location": {
                           "path": "/__w/serenity-js-cucumber-playwright-template/serenity-js-cucumber-playwright-template/test/examples/PickExample.ts",
@@ -381,8 +381,8 @@
                 "outcome": {
                   "code": 64
                 },
-                "duration": 196,
-                "startedAt": "2026-08-20T10:34:20.374Z",
+                "duration": 260,
+                "startedAt": "2026-08-20T10:51:59.065Z",
                 "children": [
                   {
                     "type": "Task",
@@ -390,8 +390,8 @@
                     "outcome": {
                       "code": 64
                     },
-                    "duration": 176,
-                    "startedAt": "2026-08-20T10:34:20.383Z",
+                    "duration": 241,
+                    "startedAt": "2026-08-20T10:51:59.074Z",
                     "children": [
                       {
                         "type": "Interaction",
@@ -399,8 +399,8 @@
                         "outcome": {
                           "code": 64
                         },
-                        "duration": 26,
-                        "startedAt": "2026-08-20T10:34:20.383Z",
+                        "duration": 19,
+                        "startedAt": "2026-08-20T10:51:59.074Z",
                         "children": [],
                         "location": {
                           "path": "/__w/serenity-js-cucumber-playwright-template/serenity-js-cucumber-playwright-template/test/authentication/Authenticate.ts",
@@ -414,8 +414,8 @@
                         "outcome": {
                           "code": 64
                         },
-                        "duration": 6,
-                        "startedAt": "2026-08-20T10:34:20.420Z",
+                        "duration": 8,
+                        "startedAt": "2026-08-20T10:51:59.103Z",
                         "children": [],
                         "location": {
                           "path": "/__w/serenity-js-cucumber-playwright-template/serenity-js-cucumber-playwright-template/test/authentication/Authenticate.ts",
@@ -429,8 +429,8 @@
                         "outcome": {
                           "code": 64
                         },
-                        "duration": 112,
-                        "startedAt": "2026-08-20T10:34:20.436Z",
+                        "duration": 183,
+                        "startedAt": "2026-08-20T10:51:59.121Z",
                         "children": [],
                         "location": {
                           "path": "/__w/serenity-js-cucumber-playwright-template/serenity-js-cucumber-playwright-template/test/authentication/Authenticate.ts",
@@ -457,8 +457,8 @@
                 "outcome": {
                   "code": 64
                 },
-                "duration": 94,
-                "startedAt": "2026-08-20T10:34:20.570Z",
+                "duration": 89,
+                "startedAt": "2026-08-20T10:51:59.325Z",
                 "children": [
                   {
                     "type": "Task",
@@ -466,8 +466,8 @@
                     "outcome": {
                       "code": 64
                     },
-                    "duration": 75,
-                    "startedAt": "2026-08-20T10:34:20.579Z",
+                    "duration": 73,
+                    "startedAt": "2026-08-20T10:51:59.331Z",
                     "children": [
                       {
                         "type": "Task",
@@ -476,7 +476,7 @@
                           "code": 64
                         },
                         "duration": 50,
-                        "startedAt": "2026-08-20T10:34:20.579Z",
+                        "startedAt": "2026-08-20T10:51:59.331Z",
                         "children": [
                           {
                             "type": "Interaction",
@@ -484,8 +484,8 @@
                             "outcome": {
                               "code": 64
                             },
-                            "duration": 40,
-                            "startedAt": "2026-08-20T10:34:20.579Z",
+                            "duration": 39,
+                            "startedAt": "2026-08-20T10:51:59.331Z",
                             "children": [],
                             "location": {
                               "path": "/__w/serenity-js-cucumber-playwright-template/serenity-js-cucumber-playwright-template/features/step-definitions/the-internet.steps.ts",
@@ -506,8 +506,8 @@
                         "outcome": {
                           "code": 64
                         },
-                        "duration": 4,
-                        "startedAt": "2026-08-20T10:34:20.640Z",
+                        "duration": 2,
+                        "startedAt": "2026-08-20T10:51:59.391Z",
                         "children": [],
                         "location": {
                           "path": "/__w/serenity-js-cucumber-playwright-template/serenity-js-cucumber-playwright-template/features/step-definitions/the-internet.steps.ts",
@@ -562,12 +562,12 @@
     "serenityVersion": "3.45.8",
     "runtime": {
       "provider": "GitHub Actions",
-      "buildNumber": "2124",
+      "buildNumber": "2126",
       "branch": "main",
-      "commit": "93e96d0b5f6671677a56180c4dcc261bed26a34a",
-      "commitMessage": "Merge pull request #609 from serenity-js/feat/migrate-to-html-reporter",
+      "commit": "e3e723d9a78deec2fe1bf94d69b045524ca8029c",
+      "commitMessage": "Merge pull request #610 from serenity-js/fix/update-readme-references",
       "commitAuthor": "Jan Molak",
-      "jobUrl": "https://github.com/serenity-js/serenity-js-cucumber-playwright-template/actions/runs/32359505097",
+      "jobUrl": "https://github.com/serenity-js/serenity-js-cucumber-playwright-template/actions/runs/32360909687",
       "workflow": "build",
       "repositoryUrl": "https://github.com/serenity-js/serenity-js-cucumber-playwright-template",
       "triggeredBy": "jan-molak"
@@ -575,7 +575,7 @@
     "projectName": "serenity-js-cucumber-playwright-template",
     "packageManager": "npm"
   },
-  "testRunId": "2124",
+  "testRunId": "2126",
   "moduleId": "serenity-js-cucumber-playwright-template",
   "attempt": 1
 }
