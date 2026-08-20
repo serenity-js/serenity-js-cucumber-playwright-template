@@ -1,0 +1,581 @@
+{
+  "schemaVersion": 1,
+  "startedAt": "2026-08-20T10:34:19.904Z",
+  "finishedAt": "2026-08-20T10:34:21.601Z",
+  "outcomes": {
+    "passed": 1,
+    "failed": 0,
+    "pending": 0,
+    "skipped": 0,
+    "compromised": 0,
+    "error": 0
+  },
+  "scenes": [
+    {
+      "name": "Using username and password to log in",
+      "category": "Form-based authentication",
+      "outcome": {
+        "code": 64
+      },
+      "duration": 1697,
+      "startedAt": "2026-08-20T10:34:19.904Z",
+      "source": {
+        "path": "/__w/serenity-js-cucumber-playwright-template/serenity-js-cucumber-playwright-template/features/authentication/form-based_authentication.feature",
+        "line": 24
+      },
+      "tags": [
+        {
+          "type": "capability",
+          "name": "Authentication"
+        },
+        {
+          "type": "feature",
+          "name": "Form-based authentication"
+        },
+        {
+          "type": "module",
+          "name": "serenity-js-cucumber-playwright-template"
+        }
+      ],
+      "activities": [],
+      "narrative": "In order to learn how to use Serenity/JS with Cucumber and Playwright\nAs a Curious Developer\nI'd like to see an example",
+      "description": "[\"The Internet\"](https://the-internet.herokuapp.com/) is an example application\nthat captures prominent and ugly functionality found on the web.\nPerfect for writing automated acceptance tests against 😎\nWith **Serenity/JS** you can use [Markdown](https://en.wikipedia.org/wiki/Markdown)\nto better describe each `Feature` and `Scenario`.",
+      "cast": [
+        {
+          "name": "Alice",
+          "abilities": [
+            {
+              "name": "PerformActivities"
+            },
+            {
+              "name": "AnswerQuestions"
+            },
+            {
+              "name": "RaiseErrors"
+            },
+            {
+              "name": "ScheduleWork",
+              "details": "{\"scheduler\":{\"clock\":{\"timeAdjustment\":{\"milliseconds\":0}},\"interactionTimeout\":{\"milliseconds\":5000}}}"
+            },
+            {
+              "name": "BrowseTheWebWithPlaywright"
+            },
+            {
+              "name": "CallAnApi",
+              "details": "{\"baseURL\":\"https://the-internet.herokuapp.com/\",\"headers\":{\"common\":{\"Accept\":\"application/json, text/plain, */*\"}},\"timeout\":10000}"
+            },
+            {
+              "name": "TakeNotes",
+              "details": "{\"notepad\":{}}"
+            }
+          ]
+        }
+      ],
+      "scenarioOutline": {
+        "template": "When she logs in using \"<username>\" and \"<password>\"\nThen she should see that authentication has <outcome>",
+        "parameters": [
+          {
+            "name": "",
+            "values": {
+              "username": "tomsmith",
+              "password": "SuperSecretPassword!",
+              "outcome": "succeeded"
+            },
+            "outcome": {
+              "code": 64
+            },
+            "duration": 916,
+            "activities": [
+              {
+                "type": "Task",
+                "name": "Given Alice starts with the \"Form Authentication\" example",
+                "outcome": {
+                  "code": 64
+                },
+                "duration": 574,
+                "startedAt": "2026-08-20T10:34:18.985Z",
+                "children": [
+                  {
+                    "type": "Interaction",
+                    "name": "Alice navigates to \"/\"",
+                    "outcome": {
+                      "code": 64
+                    },
+                    "duration": 214,
+                    "startedAt": "2026-08-20T10:34:19.006Z",
+                    "children": [],
+                    "location": {
+                      "path": "/__w/serenity-js-cucumber-playwright-template/serenity-js-cucumber-playwright-template/features/step-definitions/the-internet.steps.ts",
+                      "line": 16,
+                      "column": 18
+                    }
+                  },
+                  {
+                    "type": "Task",
+                    "name": "Alice picks example called Form Authentication",
+                    "outcome": {
+                      "code": 64
+                    },
+                    "duration": 317,
+                    "startedAt": "2026-08-20T10:34:19.231Z",
+                    "children": [
+                      {
+                        "type": "Interaction",
+                        "name": "Alice clicks on the first of available examples where Text does equal \"Form Authentication\"",
+                        "outcome": {
+                          "code": 64
+                        },
+                        "duration": 305,
+                        "startedAt": "2026-08-20T10:34:19.232Z",
+                        "children": [],
+                        "location": {
+                          "path": "/__w/serenity-js-cucumber-playwright-template/serenity-js-cucumber-playwright-template/test/examples/PickExample.ts",
+                          "line": 12,
+                          "column": 19
+                        }
+                      }
+                    ],
+                    "location": {
+                      "path": "/__w/serenity-js-cucumber-playwright-template/serenity-js-cucumber-playwright-template/features/step-definitions/the-internet.steps.ts",
+                      "line": 17,
+                      "column": 21
+                    }
+                  }
+                ],
+                "location": {
+                  "path": "/__w/serenity-js-cucumber-playwright-template/serenity-js-cucumber-playwright-template/features/authentication/form-based_authentication.feature",
+                  "line": 8
+                }
+              },
+              {
+                "type": "Task",
+                "name": "When she logs in using \"tomsmith\" and \"SuperSecretPassword!\"",
+                "outcome": {
+                  "code": 64
+                },
+                "duration": 208,
+                "startedAt": "2026-08-20T10:34:19.560Z",
+                "children": [
+                  {
+                    "type": "Task",
+                    "name": "Alice logs in as tomsmith",
+                    "outcome": {
+                      "code": 64
+                    },
+                    "duration": 187,
+                    "startedAt": "2026-08-20T10:34:19.571Z",
+                    "children": [
+                      {
+                        "type": "Interaction",
+                        "name": "Alice enters \"tomsmith\" into username field",
+                        "outcome": {
+                          "code": 64
+                        },
+                        "duration": 27,
+                        "startedAt": "2026-08-20T10:34:19.571Z",
+                        "children": [],
+                        "location": {
+                          "path": "/__w/serenity-js-cucumber-playwright-template/serenity-js-cucumber-playwright-template/test/authentication/Authenticate.ts",
+                          "line": 18,
+                          "column": 38
+                        }
+                      },
+                      {
+                        "type": "Interaction",
+                        "name": "Alice enters \"SuperSecretPassword!\" into password field",
+                        "outcome": {
+                          "code": 64
+                        },
+                        "duration": 5,
+                        "startedAt": "2026-08-20T10:34:19.609Z",
+                        "children": [],
+                        "location": {
+                          "path": "/__w/serenity-js-cucumber-playwright-template/serenity-js-cucumber-playwright-template/test/authentication/Authenticate.ts",
+                          "line": 19,
+                          "column": 38
+                        }
+                      },
+                      {
+                        "type": "Interaction",
+                        "name": "Alice clicks on login button",
+                        "outcome": {
+                          "code": 64
+                        },
+                        "duration": 122,
+                        "startedAt": "2026-08-20T10:34:19.625Z",
+                        "children": [],
+                        "location": {
+                          "path": "/__w/serenity-js-cucumber-playwright-template/serenity-js-cucumber-playwright-template/test/authentication/Authenticate.ts",
+                          "line": 20,
+                          "column": 19
+                        }
+                      }
+                    ],
+                    "location": {
+                      "path": "/__w/serenity-js-cucumber-playwright-template/serenity-js-cucumber-playwright-template/features/step-definitions/the-internet.steps.ts",
+                      "line": 23,
+                      "column": 22
+                    }
+                  }
+                ],
+                "location": {
+                  "path": "/__w/serenity-js-cucumber-playwright-template/serenity-js-cucumber-playwright-template/features/authentication/form-based_authentication.feature",
+                  "line": 18
+                }
+              },
+              {
+                "type": "Task",
+                "name": "Then she should see that authentication has succeeded",
+                "outcome": {
+                  "code": 64
+                },
+                "duration": 105,
+                "startedAt": "2026-08-20T10:34:19.769Z",
+                "children": [
+                  {
+                    "type": "Task",
+                    "name": "Alice verifies that authentication has succeeded",
+                    "outcome": {
+                      "code": 64
+                    },
+                    "duration": 85,
+                    "startedAt": "2026-08-20T10:34:19.779Z",
+                    "children": [
+                      {
+                        "type": "Task",
+                        "name": "Alice verifies that flash alert is present",
+                        "outcome": {
+                          "code": 64
+                        },
+                        "duration": 60,
+                        "startedAt": "2026-08-20T10:34:19.780Z",
+                        "children": [
+                          {
+                            "type": "Interaction",
+                            "name": "Alice ensures that flash message does become visible",
+                            "outcome": {
+                              "code": 64
+                            },
+                            "duration": 50,
+                            "startedAt": "2026-08-20T10:34:19.780Z",
+                            "children": [],
+                            "location": {
+                              "path": "/__w/serenity-js-cucumber-playwright-template/serenity-js-cucumber-playwright-template/features/step-definitions/the-internet.steps.ts",
+                              "line": 36,
+                              "column": 46
+                            }
+                          }
+                        ],
+                        "location": {
+                          "path": "/__w/serenity-js-cucumber-playwright-template/serenity-js-cucumber-playwright-template/test/authentication/VerifyAuthentication.ts",
+                          "line": 21,
+                          "column": 34
+                        }
+                      },
+                      {
+                        "type": "Interaction",
+                        "name": "Alice ensures that the text of flash message does include \"You logged into a secure area!\"",
+                        "outcome": {
+                          "code": 64
+                        },
+                        "duration": 3,
+                        "startedAt": "2026-08-20T10:34:19.851Z",
+                        "children": [],
+                        "location": {
+                          "path": "/__w/serenity-js-cucumber-playwright-template/serenity-js-cucumber-playwright-template/features/step-definitions/the-internet.steps.ts",
+                          "line": 36,
+                          "column": 46
+                        }
+                      }
+                    ],
+                    "location": {
+                      "path": "/__w/serenity-js-cucumber-playwright-template/serenity-js-cucumber-playwright-template/features/step-definitions/the-internet.steps.ts",
+                      "line": 36,
+                      "column": 46
+                    }
+                  }
+                ],
+                "location": {
+                  "path": "/__w/serenity-js-cucumber-playwright-template/serenity-js-cucumber-playwright-template/features/authentication/form-based_authentication.feature",
+                  "line": 19
+                }
+              }
+            ]
+          },
+          {
+            "name": "",
+            "values": {
+              "username": "foobar",
+              "password": "barfoo",
+              "outcome": "failed"
+            },
+            "outcome": {
+              "code": 64
+            },
+            "duration": 781,
+            "activities": [
+              {
+                "type": "Task",
+                "name": "Given Alice starts with the \"Form Authentication\" example",
+                "outcome": {
+                  "code": 64
+                },
+                "duration": 468,
+                "startedAt": "2026-08-20T10:34:19.906Z",
+                "children": [
+                  {
+                    "type": "Interaction",
+                    "name": "Alice navigates to \"/\"",
+                    "outcome": {
+                      "code": 64
+                    },
+                    "duration": 150,
+                    "startedAt": "2026-08-20T10:34:19.912Z",
+                    "children": [],
+                    "location": {
+                      "path": "/__w/serenity-js-cucumber-playwright-template/serenity-js-cucumber-playwright-template/features/step-definitions/the-internet.steps.ts",
+                      "line": 16,
+                      "column": 18
+                    }
+                  },
+                  {
+                    "type": "Task",
+                    "name": "Alice picks example called Form Authentication",
+                    "outcome": {
+                      "code": 64
+                    },
+                    "duration": 291,
+                    "startedAt": "2026-08-20T10:34:20.072Z",
+                    "children": [
+                      {
+                        "type": "Interaction",
+                        "name": "Alice clicks on the first of available examples where Text does equal \"Form Authentication\"",
+                        "outcome": {
+                          "code": 64
+                        },
+                        "duration": 280,
+                        "startedAt": "2026-08-20T10:34:20.072Z",
+                        "children": [],
+                        "location": {
+                          "path": "/__w/serenity-js-cucumber-playwright-template/serenity-js-cucumber-playwright-template/test/examples/PickExample.ts",
+                          "line": 12,
+                          "column": 19
+                        }
+                      }
+                    ],
+                    "location": {
+                      "path": "/__w/serenity-js-cucumber-playwright-template/serenity-js-cucumber-playwright-template/features/step-definitions/the-internet.steps.ts",
+                      "line": 17,
+                      "column": 21
+                    }
+                  }
+                ],
+                "location": {
+                  "path": "/__w/serenity-js-cucumber-playwright-template/serenity-js-cucumber-playwright-template/features/authentication/form-based_authentication.feature",
+                  "line": 8
+                }
+              },
+              {
+                "type": "Task",
+                "name": "When she logs in using \"foobar\" and \"barfoo\"",
+                "outcome": {
+                  "code": 64
+                },
+                "duration": 196,
+                "startedAt": "2026-08-20T10:34:20.374Z",
+                "children": [
+                  {
+                    "type": "Task",
+                    "name": "Alice logs in as foobar",
+                    "outcome": {
+                      "code": 64
+                    },
+                    "duration": 176,
+                    "startedAt": "2026-08-20T10:34:20.383Z",
+                    "children": [
+                      {
+                        "type": "Interaction",
+                        "name": "Alice enters \"foobar\" into username field",
+                        "outcome": {
+                          "code": 64
+                        },
+                        "duration": 26,
+                        "startedAt": "2026-08-20T10:34:20.383Z",
+                        "children": [],
+                        "location": {
+                          "path": "/__w/serenity-js-cucumber-playwright-template/serenity-js-cucumber-playwright-template/test/authentication/Authenticate.ts",
+                          "line": 18,
+                          "column": 38
+                        }
+                      },
+                      {
+                        "type": "Interaction",
+                        "name": "Alice enters \"barfoo\" into password field",
+                        "outcome": {
+                          "code": 64
+                        },
+                        "duration": 6,
+                        "startedAt": "2026-08-20T10:34:20.420Z",
+                        "children": [],
+                        "location": {
+                          "path": "/__w/serenity-js-cucumber-playwright-template/serenity-js-cucumber-playwright-template/test/authentication/Authenticate.ts",
+                          "line": 19,
+                          "column": 38
+                        }
+                      },
+                      {
+                        "type": "Interaction",
+                        "name": "Alice clicks on login button",
+                        "outcome": {
+                          "code": 64
+                        },
+                        "duration": 112,
+                        "startedAt": "2026-08-20T10:34:20.436Z",
+                        "children": [],
+                        "location": {
+                          "path": "/__w/serenity-js-cucumber-playwright-template/serenity-js-cucumber-playwright-template/test/authentication/Authenticate.ts",
+                          "line": 20,
+                          "column": 19
+                        }
+                      }
+                    ],
+                    "location": {
+                      "path": "/__w/serenity-js-cucumber-playwright-template/serenity-js-cucumber-playwright-template/features/step-definitions/the-internet.steps.ts",
+                      "line": 23,
+                      "column": 22
+                    }
+                  }
+                ],
+                "location": {
+                  "path": "/__w/serenity-js-cucumber-playwright-template/serenity-js-cucumber-playwright-template/features/authentication/form-based_authentication.feature",
+                  "line": 18
+                }
+              },
+              {
+                "type": "Task",
+                "name": "Then she should see that authentication has failed",
+                "outcome": {
+                  "code": 64
+                },
+                "duration": 94,
+                "startedAt": "2026-08-20T10:34:20.570Z",
+                "children": [
+                  {
+                    "type": "Task",
+                    "name": "Alice verifies that authentication has failed",
+                    "outcome": {
+                      "code": 64
+                    },
+                    "duration": 75,
+                    "startedAt": "2026-08-20T10:34:20.579Z",
+                    "children": [
+                      {
+                        "type": "Task",
+                        "name": "Alice verifies that flash alert is present",
+                        "outcome": {
+                          "code": 64
+                        },
+                        "duration": 50,
+                        "startedAt": "2026-08-20T10:34:20.579Z",
+                        "children": [
+                          {
+                            "type": "Interaction",
+                            "name": "Alice ensures that flash message does become visible",
+                            "outcome": {
+                              "code": 64
+                            },
+                            "duration": 40,
+                            "startedAt": "2026-08-20T10:34:20.579Z",
+                            "children": [],
+                            "location": {
+                              "path": "/__w/serenity-js-cucumber-playwright-template/serenity-js-cucumber-playwright-template/features/step-definitions/the-internet.steps.ts",
+                              "line": 36,
+                              "column": 46
+                            }
+                          }
+                        ],
+                        "location": {
+                          "path": "/__w/serenity-js-cucumber-playwright-template/serenity-js-cucumber-playwright-template/test/authentication/VerifyAuthentication.ts",
+                          "line": 27,
+                          "column": 34
+                        }
+                      },
+                      {
+                        "type": "Interaction",
+                        "name": "Alice ensures that the text of flash message does include \"Your username is invalid!\"",
+                        "outcome": {
+                          "code": 64
+                        },
+                        "duration": 4,
+                        "startedAt": "2026-08-20T10:34:20.640Z",
+                        "children": [],
+                        "location": {
+                          "path": "/__w/serenity-js-cucumber-playwright-template/serenity-js-cucumber-playwright-template/features/step-definitions/the-internet.steps.ts",
+                          "line": 36,
+                          "column": 46
+                        }
+                      }
+                    ],
+                    "location": {
+                      "path": "/__w/serenity-js-cucumber-playwright-template/serenity-js-cucumber-playwright-template/features/step-definitions/the-internet.steps.ts",
+                      "line": 36,
+                      "column": 46
+                    }
+                  }
+                ],
+                "location": {
+                  "path": "/__w/serenity-js-cucumber-playwright-template/serenity-js-cucumber-playwright-template/features/authentication/form-based_authentication.feature",
+                  "line": 19
+                }
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "tags": [
+    {
+      "type": "capability",
+      "name": "Authentication"
+    },
+    {
+      "type": "feature",
+      "name": "Form-based authentication"
+    },
+    {
+      "type": "module",
+      "name": "serenity-js-cucumber-playwright-template"
+    }
+  ],
+  "testRunner": {
+    "name": "Cucumber",
+    "version": "13.2.1"
+  },
+  "systemContext": {
+    "nodeVersion": "v24.19.0",
+    "os": {
+      "name": "linux",
+      "version": "6.17.0-1022-azure",
+      "arch": "x64"
+    },
+    "serenityVersion": "3.45.8",
+    "runtime": {
+      "provider": "GitHub Actions",
+      "buildNumber": "2124",
+      "branch": "main",
+      "commit": "93e96d0b5f6671677a56180c4dcc261bed26a34a",
+      "commitMessage": "Merge pull request #609 from serenity-js/feat/migrate-to-html-reporter",
+      "commitAuthor": "Jan Molak",
+      "jobUrl": "https://github.com/serenity-js/serenity-js-cucumber-playwright-template/actions/runs/32359505097",
+      "workflow": "build",
+      "repositoryUrl": "https://github.com/serenity-js/serenity-js-cucumber-playwright-template",
+      "triggeredBy": "jan-molak"
+    },
+    "projectName": "serenity-js-cucumber-playwright-template",
+    "packageManager": "npm"
+  },
+  "testRunId": "2124",
+  "moduleId": "serenity-js-cucumber-playwright-template",
+  "attempt": 1
+}

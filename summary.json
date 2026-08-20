@@ -1,0 +1,46 @@
+{
+  "$schema": "https://serenity-js.org/schemas/report-summary.json",
+  "generated": "2026-08-20T10:34:20.761Z",
+  "title": "Cucumber",
+  "schemaVersion": 1,
+  "reportUrl": "./index.html",
+  "ci": {
+    "commit": "93e96d0b5f6671677a56180c4dcc261bed26a34a",
+    "branch": "main",
+    "jobUrl": "https://github.com/serenity-js/serenity-js-cucumber-playwright-template/actions/runs/32359505097"
+  },
+  "latestRun": {
+    "timestamp": "2026-08-20T10:34:19.904Z",
+    "label": "2124",
+    "totals": {
+      "passed": 1,
+      "failed": 0,
+      "pending": 0,
+      "skipped": 0,
+      "compromised": 0,
+      "error": 0
+    },
+    "duration": 1697
+  },
+  "runs": 1,
+  "failureClusters": [],
+  "consistency": {
+    "flaky": [],
+    "inconsistent": [],
+    "degraded": [],
+    "recovered": []
+  },
+  "scores": {
+    "passRate": 100,
+    "completeness": 100,
+    "consistency": 100,
+    "confidence": 100
+  },
+  "slowest": [
+    {
+      "name": "Using username and password to log in",
+      "source": "authentication/form-based_authentication.feature:24",
+      "duration": 1697
+    }
+  ]
+}
