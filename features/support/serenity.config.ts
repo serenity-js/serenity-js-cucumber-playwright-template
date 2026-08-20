@@ -52,8 +52,7 @@ BeforeAll(async () => {
                 // strategy: 'TakePhotosOfInteractions',    // capture screenshots of all the interactions; slower but more comprehensive
                 strategy: 'TakePhotosOfFailures',           // capture screenshots of failed interactions; much faster
             } ],
-            [ '@serenity-js/core:ArtifactArchiver', { outputDirectory: path.resolve(__dirname, '../../target/site/serenity') } ],
-            [ '@serenity-js/serenity-bdd', { specDirectory: path.resolve(__dirname, '../../features') } ],
+            [ '@serenity-js/html-reporter', { specDirectory: path.resolve(__dirname, '../../features') } ],
         ],
 
         cueTimeout: timeouts.serenity.cueTimeout,

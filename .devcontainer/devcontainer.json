@@ -25,7 +25,7 @@
   "waitFor": "postCreateCommand",
   "postAttachCommand": {
     "Serenity/JS Test Run": "npm test",
-    "Serenity Reports Preview": "npx http-server -p 8080 target/site/serenity/"
+    "Serenity Reports Preview": "npm run test:report"
   },
 
   "customizations": {

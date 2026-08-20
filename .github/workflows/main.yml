@@ -26,7 +26,7 @@ jobs:
         if: always()
         with:
           name: serenity-report
-          path: target/site/serenity
+          path: reports/serenity-js
           retention-days: 30
 
       - name: GitHub Pages
@@ -34,5 +34,5 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@v4.9.0
         with:
           branch: gh-pages
-          folder: target/site
+          folder: reports/serenity-js
           clean: true
