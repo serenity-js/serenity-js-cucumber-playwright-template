@@ -11,9 +11,9 @@ window.__SERENITY_REPORT_DATA__ = {
       "compromised": 0,
       "error": 0
     },
-    "duration": 2654,
-    "startedAt": "2026-08-20T10:51:58.212Z",
-    "finishedAt": "2026-08-20T10:52:00.866Z",
+    "duration": 2408,
+    "startedAt": "2026-08-20T11:08:37.226Z",
+    "finishedAt": "2026-08-20T11:08:39.634Z",
     "testRunner": "Cucumber"
   },
   "scenarios": [
@@ -21,8 +21,8 @@ window.__SERENITY_REPORT_DATA__ = {
       "name": "Using username and password to log in",
       "category": "Form-based authentication",
       "outcome": "SUCCESS",
-      "duration": 2654,
-      "startedAt": "2026-08-20T10:51:58.212Z",
+      "duration": 2408,
+      "startedAt": "2026-08-20T11:08:37.226Z",
       "source": {
         "path": "/__w/serenity-js-cucumber-playwright-template/serenity-js-cucumber-playwright-template/features/authentication/form-based_authentication.feature",
         "line": 24
@@ -45,9 +45,9 @@ window.__SERENITY_REPORT_DATA__ = {
       "executionHistory": [
         {
           "outcome": "SUCCESS",
-          "run": "2126",
-          "timestamp": "2026-08-20T10:51:58.212Z",
-          "duration": 2654,
+          "run": "2128",
+          "timestamp": "2026-08-20T11:08:37.226Z",
+          "duration": 2408,
           "activities": []
         }
       ],
@@ -95,20 +95,20 @@ window.__SERENITY_REPORT_DATA__ = {
               "outcome": "succeeded"
             },
             "outcome": "SUCCESS",
-            "duration": 1431,
+            "duration": 1250,
             "activities": [
               {
                 "name": "Given Alice starts with the \"Form Authentication\" example",
                 "outcome": "SUCCESS",
-                "duration": 1040,
+                "duration": 901,
                 "children": [
                   {
                     "name": "Alice navigates to \"/\"",
                     "outcome": "SUCCESS",
-                    "duration": 639,
+                    "duration": 583,
                     "children": [],
                     "type": "Interaction",
-                    "startedAt": "2026-08-20T10:51:56.797Z",
+                    "startedAt": "2026-08-20T11:08:35.989Z",
                     "location": {
                       "path": "/__w/serenity-js-cucumber-playwright-template/serenity-js-cucumber-playwright-template/features/step-definitions/the-internet.steps.ts",
                       "line": 16,
@@ -118,15 +118,15 @@ window.__SERENITY_REPORT_DATA__ = {
                   {
                     "name": "Alice picks example called Form Authentication",
                     "outcome": "SUCCESS",
-                    "duration": 362,
+                    "duration": 282,
                     "children": [
                       {
                         "name": "Alice clicks on the first of available examples where Text does equal \"Form Authentication\"",
                         "outcome": "SUCCESS",
-                        "duration": 351,
+                        "duration": 272,
                         "children": [],
                         "type": "Interaction",
-                        "startedAt": "2026-08-20T10:51:57.448Z",
+                        "startedAt": "2026-08-20T11:08:36.583Z",
                         "location": {
                           "path": "/__w/serenity-js-cucumber-playwright-template/serenity-js-cucumber-playwright-template/test/examples/PickExample.ts",
                           "line": 12,
@@ -135,7 +135,7 @@ window.__SERENITY_REPORT_DATA__ = {
                       }
                     ],
                     "type": "Task",
-                    "startedAt": "2026-08-20T10:51:57.447Z",
+                    "startedAt": "2026-08-20T11:08:36.583Z",
                     "location": {
                       "path": "/__w/serenity-js-cucumber-playwright-template/serenity-js-cucumber-playwright-template/features/step-definitions/the-internet.steps.ts",
                       "line": 17,
@@ -144,7 +144,7 @@ window.__SERENITY_REPORT_DATA__ = {
                   }
                 ],
                 "type": "Task",
-                "startedAt": "2026-08-20T10:51:56.780Z",
+                "startedAt": "2026-08-20T11:08:35.974Z",
                 "location": {
                   "path": "/__w/serenity-js-cucumber-playwright-template/serenity-js-cucumber-playwright-template/features/authentication/form-based_authentication.feature",
                   "line": 8
@@ -153,20 +153,20 @@ window.__SERENITY_REPORT_DATA__ = {
               {
                 "name": "When she logs in using \"tomsmith\" and \"SuperSecretPassword!\"",
                 "outcome": "SUCCESS",
-                "duration": 271,
+                "duration": 243,
                 "children": [
                   {
                     "name": "Alice logs in as tomsmith",
                     "outcome": "SUCCESS",
-                    "duration": 253,
+                    "duration": 224,
                     "children": [
                       {
                         "name": "Alice enters \"tomsmith\" into username field",
                         "outcome": "SUCCESS",
-                        "duration": 36,
+                        "duration": 18,
                         "children": [],
                         "type": "Interaction",
-                        "startedAt": "2026-08-20T10:51:57.829Z",
+                        "startedAt": "2026-08-20T11:08:36.884Z",
                         "location": {
                           "path": "/__w/serenity-js-cucumber-playwright-template/serenity-js-cucumber-playwright-template/test/authentication/Authenticate.ts",
                           "line": 18,
@@ -179,7 +179,7 @@ window.__SERENITY_REPORT_DATA__ = {
                         "duration": 5,
                         "children": [],
                         "type": "Interaction",
-                        "startedAt": "2026-08-20T10:51:57.874Z",
+                        "startedAt": "2026-08-20T11:08:36.912Z",
                         "location": {
                           "path": "/__w/serenity-js-cucumber-playwright-template/serenity-js-cucumber-playwright-template/test/authentication/Authenticate.ts",
                           "line": 19,
@@ -189,10 +189,10 @@ window.__SERENITY_REPORT_DATA__ = {
                       {
                         "name": "Alice clicks on login button",
                         "outcome": "SUCCESS",
-                        "duration": 179,
+                        "duration": 169,
                         "children": [],
                         "type": "Interaction",
-                        "startedAt": "2026-08-20T10:51:57.890Z",
+                        "startedAt": "2026-08-20T11:08:36.928Z",
                         "location": {
                           "path": "/__w/serenity-js-cucumber-playwright-template/serenity-js-cucumber-playwright-template/test/authentication/Authenticate.ts",
                           "line": 20,
@@ -201,7 +201,7 @@ window.__SERENITY_REPORT_DATA__ = {
                       }
                     ],
                     "type": "Task",
-                    "startedAt": "2026-08-20T10:51:57.828Z",
+                    "startedAt": "2026-08-20T11:08:36.884Z",
                     "location": {
                       "path": "/__w/serenity-js-cucumber-playwright-template/serenity-js-cucumber-playwright-template/features/step-definitions/the-internet.steps.ts",
                       "line": 23,
@@ -210,7 +210,7 @@ window.__SERENITY_REPORT_DATA__ = {
                   }
                 ],
                 "type": "Task",
-                "startedAt": "2026-08-20T10:51:57.821Z",
+                "startedAt": "2026-08-20T11:08:36.876Z",
                 "location": {
                   "path": "/__w/serenity-js-cucumber-playwright-template/serenity-js-cucumber-playwright-template/features/authentication/form-based_authentication.feature",
                   "line": 18
@@ -219,25 +219,25 @@ window.__SERENITY_REPORT_DATA__ = {
               {
                 "name": "Then she should see that authentication has succeeded",
                 "outcome": "SUCCESS",
-                "duration": 93,
+                "duration": 81,
                 "children": [
                   {
                     "name": "Alice verifies that authentication has succeeded",
                     "outcome": "SUCCESS",
-                    "duration": 74,
+                    "duration": 65,
                     "children": [
                       {
                         "name": "Alice verifies that flash alert is present",
                         "outcome": "SUCCESS",
-                        "duration": 50,
+                        "duration": 43,
                         "children": [
                           {
                             "name": "Alice ensures that flash message does become visible",
                             "outcome": "SUCCESS",
-                            "duration": 40,
+                            "duration": 32,
                             "children": [],
                             "type": "Interaction",
-                            "startedAt": "2026-08-20T10:51:58.102Z",
+                            "startedAt": "2026-08-20T11:08:37.125Z",
                             "location": {
                               "path": "/__w/serenity-js-cucumber-playwright-template/serenity-js-cucumber-playwright-template/features/step-definitions/the-internet.steps.ts",
                               "line": 36,
@@ -246,7 +246,7 @@ window.__SERENITY_REPORT_DATA__ = {
                           }
                         ],
                         "type": "Task",
-                        "startedAt": "2026-08-20T10:51:58.102Z",
+                        "startedAt": "2026-08-20T11:08:37.125Z",
                         "location": {
                           "path": "/__w/serenity-js-cucumber-playwright-template/serenity-js-cucumber-playwright-template/test/authentication/VerifyAuthentication.ts",
                           "line": 21,
@@ -259,7 +259,7 @@ window.__SERENITY_REPORT_DATA__ = {
                         "duration": 2,
                         "children": [],
                         "type": "Interaction",
-                        "startedAt": "2026-08-20T10:51:58.163Z",
+                        "startedAt": "2026-08-20T11:08:37.178Z",
                         "location": {
                           "path": "/__w/serenity-js-cucumber-playwright-template/serenity-js-cucumber-playwright-template/features/step-definitions/the-internet.steps.ts",
                           "line": 36,
@@ -268,7 +268,7 @@ window.__SERENITY_REPORT_DATA__ = {
                       }
                     ],
                     "type": "Task",
-                    "startedAt": "2026-08-20T10:51:58.102Z",
+                    "startedAt": "2026-08-20T11:08:37.125Z",
                     "location": {
                       "path": "/__w/serenity-js-cucumber-playwright-template/serenity-js-cucumber-playwright-template/features/step-definitions/the-internet.steps.ts",
                       "line": 36,
@@ -277,7 +277,7 @@ window.__SERENITY_REPORT_DATA__ = {
                   }
                 ],
                 "type": "Task",
-                "startedAt": "2026-08-20T10:51:58.093Z",
+                "startedAt": "2026-08-20T11:08:37.119Z",
                 "location": {
                   "path": "/__w/serenity-js-cucumber-playwright-template/serenity-js-cucumber-playwright-template/features/authentication/form-based_authentication.feature",
                   "line": 19
@@ -293,20 +293,20 @@ window.__SERENITY_REPORT_DATA__ = {
               "outcome": "failed"
             },
             "outcome": "SUCCESS",
-            "duration": 1223,
+            "duration": 1158,
             "activities": [
               {
                 "name": "Given Alice starts with the \"Form Authentication\" example",
                 "outcome": "SUCCESS",
-                "duration": 851,
+                "duration": 814,
                 "children": [
                   {
                     "name": "Alice navigates to \"/\"",
                     "outcome": "SUCCESS",
-                    "duration": 523,
+                    "duration": 513,
                     "children": [],
                     "type": "Interaction",
-                    "startedAt": "2026-08-20T10:51:58.219Z",
+                    "startedAt": "2026-08-20T11:08:37.231Z",
                     "location": {
                       "path": "/__w/serenity-js-cucumber-playwright-template/serenity-js-cucumber-playwright-template/features/step-definitions/the-internet.steps.ts",
                       "line": 16,
@@ -316,15 +316,15 @@ window.__SERENITY_REPORT_DATA__ = {
                   {
                     "name": "Alice picks example called Form Authentication",
                     "outcome": "SUCCESS",
-                    "duration": 301,
+                    "duration": 274,
                     "children": [
                       {
                         "name": "Alice clicks on the first of available examples where Text does equal \"Form Authentication\"",
                         "outcome": "SUCCESS",
-                        "duration": 291,
+                        "duration": 264,
                         "children": [],
                         "type": "Interaction",
-                        "startedAt": "2026-08-20T10:51:58.753Z",
+                        "startedAt": "2026-08-20T11:08:37.755Z",
                         "location": {
                           "path": "/__w/serenity-js-cucumber-playwright-template/serenity-js-cucumber-playwright-template/test/examples/PickExample.ts",
                           "line": 12,
@@ -333,7 +333,7 @@ window.__SERENITY_REPORT_DATA__ = {
                       }
                     ],
                     "type": "Task",
-                    "startedAt": "2026-08-20T10:51:58.753Z",
+                    "startedAt": "2026-08-20T11:08:37.755Z",
                     "location": {
                       "path": "/__w/serenity-js-cucumber-playwright-template/serenity-js-cucumber-playwright-template/features/step-definitions/the-internet.steps.ts",
                       "line": 17,
@@ -342,7 +342,7 @@ window.__SERENITY_REPORT_DATA__ = {
                   }
                 ],
                 "type": "Task",
-                "startedAt": "2026-08-20T10:51:58.214Z",
+                "startedAt": "2026-08-20T11:08:37.226Z",
                 "location": {
                   "path": "/__w/serenity-js-cucumber-playwright-template/serenity-js-cucumber-playwright-template/features/authentication/form-based_authentication.feature",
                   "line": 8
@@ -351,20 +351,20 @@ window.__SERENITY_REPORT_DATA__ = {
               {
                 "name": "When she logs in using \"foobar\" and \"barfoo\"",
                 "outcome": "SUCCESS",
-                "duration": 260,
+                "duration": 244,
                 "children": [
                   {
                     "name": "Alice logs in as foobar",
                     "outcome": "SUCCESS",
-                    "duration": 241,
+                    "duration": 227,
                     "children": [
                       {
                         "name": "Alice enters \"foobar\" into username field",
                         "outcome": "SUCCESS",
-                        "duration": 19,
+                        "duration": 16,
                         "children": [],
                         "type": "Interaction",
-                        "startedAt": "2026-08-20T10:51:59.074Z",
+                        "startedAt": "2026-08-20T11:08:38.046Z",
                         "location": {
                           "path": "/__w/serenity-js-cucumber-playwright-template/serenity-js-cucumber-playwright-template/test/authentication/Authenticate.ts",
                           "line": 18,
@@ -374,10 +374,10 @@ window.__SERENITY_REPORT_DATA__ = {
                       {
                         "name": "Alice enters \"barfoo\" into password field",
                         "outcome": "SUCCESS",
-                        "duration": 8,
+                        "duration": 4,
                         "children": [],
                         "type": "Interaction",
-                        "startedAt": "2026-08-20T10:51:59.103Z",
+                        "startedAt": "2026-08-20T11:08:38.072Z",
                         "location": {
                           "path": "/__w/serenity-js-cucumber-playwright-template/serenity-js-cucumber-playwright-template/test/authentication/Authenticate.ts",
                           "line": 19,
@@ -387,10 +387,10 @@ window.__SERENITY_REPORT_DATA__ = {
                       {
                         "name": "Alice clicks on login button",
                         "outcome": "SUCCESS",
-                        "duration": 183,
+                        "duration": 176,
                         "children": [],
                         "type": "Interaction",
-                        "startedAt": "2026-08-20T10:51:59.121Z",
+                        "startedAt": "2026-08-20T11:08:38.087Z",
                         "location": {
                           "path": "/__w/serenity-js-cucumber-playwright-template/serenity-js-cucumber-playwright-template/test/authentication/Authenticate.ts",
                           "line": 20,
@@ -399,7 +399,7 @@ window.__SERENITY_REPORT_DATA__ = {
                       }
                     ],
                     "type": "Task",
-                    "startedAt": "2026-08-20T10:51:59.074Z",
+                    "startedAt": "2026-08-20T11:08:38.046Z",
                     "location": {
                       "path": "/__w/serenity-js-cucumber-playwright-template/serenity-js-cucumber-playwright-template/features/step-definitions/the-internet.steps.ts",
                       "line": 23,
@@ -408,7 +408,7 @@ window.__SERENITY_REPORT_DATA__ = {
                   }
                 ],
                 "type": "Task",
-                "startedAt": "2026-08-20T10:51:59.065Z",
+                "startedAt": "2026-08-20T11:08:38.040Z",
                 "location": {
                   "path": "/__w/serenity-js-cucumber-playwright-template/serenity-js-cucumber-playwright-template/features/authentication/form-based_authentication.feature",
                   "line": 18
@@ -417,25 +417,25 @@ window.__SERENITY_REPORT_DATA__ = {
               {
                 "name": "Then she should see that authentication has failed",
                 "outcome": "SUCCESS",
-                "duration": 89,
+                "duration": 79,
                 "children": [
                   {
                     "name": "Alice verifies that authentication has failed",
                     "outcome": "SUCCESS",
-                    "duration": 73,
+                    "duration": 63,
                     "children": [
                       {
                         "name": "Alice verifies that flash alert is present",
                         "outcome": "SUCCESS",
-                        "duration": 50,
+                        "duration": 40,
                         "children": [
                           {
                             "name": "Alice ensures that flash message does become visible",
                             "outcome": "SUCCESS",
-                            "duration": 39,
+                            "duration": 30,
                             "children": [],
                             "type": "Interaction",
-                            "startedAt": "2026-08-20T10:51:59.331Z",
+                            "startedAt": "2026-08-20T11:08:38.289Z",
                             "location": {
                               "path": "/__w/serenity-js-cucumber-playwright-template/serenity-js-cucumber-playwright-template/features/step-definitions/the-internet.steps.ts",
                               "line": 36,
@@ -444,7 +444,7 @@ window.__SERENITY_REPORT_DATA__ = {
                           }
                         ],
                         "type": "Task",
-                        "startedAt": "2026-08-20T10:51:59.331Z",
+                        "startedAt": "2026-08-20T11:08:38.289Z",
                         "location": {
                           "path": "/__w/serenity-js-cucumber-playwright-template/serenity-js-cucumber-playwright-template/test/authentication/VerifyAuthentication.ts",
                           "line": 27,
@@ -457,7 +457,7 @@ window.__SERENITY_REPORT_DATA__ = {
                         "duration": 2,
                         "children": [],
                         "type": "Interaction",
-                        "startedAt": "2026-08-20T10:51:59.391Z",
+                        "startedAt": "2026-08-20T11:08:38.340Z",
                         "location": {
                           "path": "/__w/serenity-js-cucumber-playwright-template/serenity-js-cucumber-playwright-template/features/step-definitions/the-internet.steps.ts",
                           "line": 36,
@@ -466,7 +466,7 @@ window.__SERENITY_REPORT_DATA__ = {
                       }
                     ],
                     "type": "Task",
-                    "startedAt": "2026-08-20T10:51:59.331Z",
+                    "startedAt": "2026-08-20T11:08:38.289Z",
                     "location": {
                       "path": "/__w/serenity-js-cucumber-playwright-template/serenity-js-cucumber-playwright-template/features/step-definitions/the-internet.steps.ts",
                       "line": 36,
@@ -475,7 +475,7 @@ window.__SERENITY_REPORT_DATA__ = {
                   }
                 ],
                 "type": "Task",
-                "startedAt": "2026-08-20T10:51:59.325Z",
+                "startedAt": "2026-08-20T11:08:38.284Z",
                 "location": {
                   "path": "/__w/serenity-js-cucumber-playwright-template/serenity-js-cucumber-playwright-template/features/authentication/form-based_authentication.feature",
                   "line": 19
@@ -489,8 +489,8 @@ window.__SERENITY_REPORT_DATA__ = {
   ],
   "history": [
     {
-      "timestamp": "2026-08-20T10:51:58.212Z",
-      "duration": 2654,
+      "timestamp": "2026-08-20T11:08:37.226Z",
+      "duration": 2408,
       "outcomes": {
         "passed": 1,
         "failed": 0,
@@ -499,13 +499,13 @@ window.__SERENITY_REPORT_DATA__ = {
         "compromised": 0,
         "error": 0
       },
-      "label": "2126",
-      "slowest": 2654,
-      "fastest": 2654,
-      "average": 2654,
-      "commit": "e3e723d9a78deec2fe1bf94d69b045524ca8029c",
+      "label": "2128",
+      "slowest": 2408,
+      "fastest": 2408,
+      "average": 2408,
+      "commit": "c62f5fd2a5ed3222bdb6d2f021b22326ba2e2517",
       "branch": "main",
-      "ciJobUrl": "https://github.com/serenity-js/serenity-js-cucumber-playwright-template/actions/runs/32360909687",
+      "ciJobUrl": "https://github.com/serenity-js/serenity-js-cucumber-playwright-template/actions/runs/32362237654",
       "repositoryUrl": "https://github.com/serenity-js/serenity-js-cucumber-playwright-template",
       "score": {
         "confidence": 100,
@@ -559,12 +559,12 @@ window.__SERENITY_REPORT_DATA__ = {
     "browsers": [],
     "ci": {
       "provider": "GitHub Actions",
-      "buildNumber": "2126",
+      "buildNumber": "2128",
       "branch": "main",
-      "commit": "e3e723d9a78deec2fe1bf94d69b045524ca8029c",
-      "commitMessage": "Merge pull request #610 from serenity-js/fix/update-readme-references",
+      "commit": "c62f5fd2a5ed3222bdb6d2f021b22326ba2e2517",
+      "commitMessage": "Merge pull request #611 from serenity-js/docs/add-documentation-links",
       "commitAuthor": "Jan Molak",
-      "jobUrl": "https://github.com/serenity-js/serenity-js-cucumber-playwright-template/actions/runs/32360909687",
+      "jobUrl": "https://github.com/serenity-js/serenity-js-cucumber-playwright-template/actions/runs/32362237654",
       "workflow": "build",
       "repositoryUrl": "https://github.com/serenity-js/serenity-js-cucumber-playwright-template",
       "triggeredBy": "jan-molak"
